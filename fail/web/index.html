@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAIL – Future AI Leader</title>
+  <style>
+    :root {
+      --primary: #1a1a2e;
+      --accent: #e94560;
+      --light: #f5f5f5;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --code-bg: #f3f4f6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--light);
+      color: #111;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; letter-spacing: 0.1em; }
+    header h1 span { color: var(--accent); }
+    header p { color: #aaa; margin-top: 0.5rem; font-size: 1rem; }
+
+    /* SEARCH */
+    .search-bar {
+      max-width: 700px;
+      margin: 1.5rem auto;
+      padding: 0 1rem;
+      position: relative;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 0.85rem 1.2rem 0.85rem 3rem;
+      font-size: 1rem;
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      background: white;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-bar input:focus { border-color: var(--accent); }
+    .search-bar::before {
+      content: "🔍";
+      position: absolute;
+      left: 1.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1rem;
+    }
+
+    /* NAV TABS */
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    nav button {
+      padding: 0.5rem 1.2rem;
+      border: 2px solid var(--border);
+      background: white;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    nav button:hover, nav button.active {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+
+    /* MAIN GRID */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem 3rem;
+    }
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin: 2rem 0 1rem;
+      color: var(--primary);
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+
+    /* CARDS */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.4rem;
+      transition: box-shadow 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+    .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.1); transform: translateY(-2px); }
+    .card-badge {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .card-badge.green { background: #10b981; }
+    .card-badge.blue { background: #3b82f6; }
+    .card-badge.orange { background: #f59e0b; }
+    .card-badge.purple { background: #8b5cf6; }
+    .card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .card p { font-size: 0.875rem; color: var(--muted); margin-bottom: 0.8rem; }
+    .card .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .tag {
+      background: var(--code-bg);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      padding: 0.15rem 0.5rem;
+      color: #374151;
+    }
+
+    /* SESSION DETAIL MODAL */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 100;
+      overflow-y: auto;
+    }
+    .modal-overlay.open { display: flex; justify-content: center; padding: 2rem 1rem; }
+    .modal {
+      background: white;
+      border-radius: 16px;
+      max-width: 760px;
+      width: 100%;
+      padding: 2rem;
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .modal-close {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: none; border: none;
+      font-size: 1.5rem; cursor: pointer;
+      color: var(--muted);
+    }
+    .modal h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .modal .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 1.5rem; }
+    .modal h3 { margin: 1.2rem 0 0.5rem; color: var(--primary); font-size: 1rem; }
+    .modal ul { padding-left: 1.2rem; }
+    .modal ul li { margin-bottom: 0.3rem; font-size: 0.9rem; }
+    .modal blockquote {
+      border-left: 3px solid var(--accent);
+      padding: 0.5rem 1rem;
+      background: var(--code-bg);
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+    .modal .prompt-box {
+      background: var(--code-bg);
+      border-radius: 8px;
+      padding: 1rem;
+      font-family: monospace;
+      font-size: 0.85rem;
+      margin: 0.5rem 0;
+      border: 1px solid var(--border);
+    }
+
+    /* SEARCH HIGHLIGHT */
+    .highlight { background: #fef08a; border-radius: 2px; }
+
+    /* HIDDEN */
+    .hidden { display: none !important; }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+    footer strong { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1><span>FAIL</span> – Future AI Leader</h1>
+  <p>Znalostní báze programu | Řečník: Filip Dřímalka | Ability a.s.</p>
+</header>
+
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Hledat v modulech, pojmech, tématech..." oninput="filterContent()" />
+</div>
+
+<nav>
+  <button class="active" onclick="filterTab(this, 'all')">Vše</button>
+  <button onclick="filterTab(this, 'sessions')">Moduly (sessions)</button>
+  <button onclick="filterTab(this, 'prompts')">Prompty</button>
+  <button onclick="filterTab(this, 'tools')">Nástroje</button>
+  <button onclick="filterTab(this, 'concepts')">Pojmy</button>
+</nav>
+
+<main>
+
+  <!-- SESSIONS -->
+  <div class="section-title" data-category="sessions">📚 Moduly programu</div>
+  <div class="grid" id="sessions-grid">
+
+    <div class="card" data-category="sessions" data-keywords="mindset first attempt learning agency fail první modul onboarding filip dřímalka future ai leader program přehled" onclick="openModal('modal-s1')">
+      <span class="card-badge">Modul 1</span>
+      <h3>AI First Mindset</h3>
+      <p>Úvod do programu, filozofie FAIL (First Attempt In Learning), mindset, agency a přehled možností AI pro biznesové profesionály.</p>
+      <div class="tags">
+        <span class="tag">Mindset</span>
+        <span class="tag">Agency</span>
+        <span class="tag">Úvod</span>
+        <span class="tag">Program</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="sessions" data-keywords="nástroje tools modely claude chatgpt gemini copilot notebooklm bezpečnost security shadow IT vibe coding cursor" onclick="openModal('modal-s2')">
+      <span class="card-badge blue">Modul 2</span>
+      <h3>Jak využít nástroje s AI</h3>
+      <p>Přehled AI modelů, výběr správných nástrojů, bezpečnost práce s AI, chatovací a programovací nástroje, best practices.</p>
+      <div class="tags">
+        <span class="tag">Nástroje</span>
+        <span class="tag">Bezpečnost</span>
+        <span class="tag">Modely</span>
+        <span class="tag">Cursor</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="sessions" data-keywords="symbioza working vibe 90-10 princip orchestrace workflow promptování kontext asistenti" onclick="openModal('modal-s3')">
+      <span class="card-badge green">Modul 3</span>
+      <h3>Symbioza s AI</h3>
+      <p>Principy nového způsobu práce (Vibe Working, 90-10), jak pracovat v symbióze s AI, orchestrace práce a pokročilé workflow.</p>
+      <div class="tags">
+        <span class="tag">Vibe Working</span>
+        <span class="tag">90-10</span>
+        <span class="tag">Workflow</span>
+        <span class="tag">Orchestrace</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="sessions" data-keywords="druhý mozek second brain notebooklm obsidian znalosti dokumentace systém PARA ukládání informací" onclick="openModal('modal-s4')">
+      <span class="card-badge orange">Modul 4</span>
+      <h3>Druhý mozek</h3>
+      <p>Systém ukládání a využívání znalostí s AI, druhý mozek jako superschopnost, napojení AI na vlastní poznámky a dokumenty.</p>
+      <div class="tags">
+        <span class="tag">Second Brain</span>
+        <span class="tag">Znalosti</span>
+        <span class="tag">NotebookLM</span>
+        <span class="tag">Systém</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="sessions" style="opacity:0.5;" data-keywords="modul 5 6 7 8 9 10 chybí">
+      <span class="card-badge purple">Moduly 5–10</span>
+      <h3>Chybí přepisy</h3>
+      <p>Přepisy modulů 5–10 zatím nejsou k dispozici. Doplňte je nahráním dalších souborů.</p>
+      <div class="tags">
+        <span class="tag">Brzy</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- PROMPTS -->
+  <div class="section-title" data-category="prompts">💬 Klíčové prompty</div>
+  <div class="grid" id="prompts-grid">
+
+    <div class="card" data-category="prompts" data-keywords="přepis rozhovor nabídka spolupráce analýza obchodní hovor" onclick="openModal('modal-p1')">
+      <span class="card-badge">Obchod</span>
+      <h3>Nabídka z přepisu hovoru</h3>
+      <p>Analyzuj přepis obchodního hovoru a vytvoř personalizovanou nabídku spolupráce.</p>
+      <div class="tags"><span class="tag">Analýza</span><span class="tag">Nabídka</span></div>
+    </div>
+
+    <div class="card" data-category="prompts" data-keywords="dokumentace soubory agenti firemní znalosti" onclick="openModal('modal-p2')">
+      <span class="card-badge blue">Dokumentace</span>
+      <h3>Dokumentace ze souborů</h3>
+      <p>Analyzuj soubory a vytvoř dokumentaci pro lidi i AI agenty.</p>
+      <div class="tags"><span class="tag">Dokumentace</span><span class="tag">Agenti</span></div>
+    </div>
+
+    <div class="card" data-category="prompts" data-keywords="PRD produkt funkce požadavky development" onclick="openModal('modal-p3')">
+      <span class="card-badge green">Produkt</span>
+      <h3>PRD pro novou funkci</h3>
+      <p>Vytvoř Product Requirements Document pro novou funkci portálu.</p>
+      <div class="tags"><span class="tag">PRD</span><span class="tag">Development</span></div>
+    </div>
+
+    <div class="card" data-category="prompts" data-keywords="automatizace linkedin CRM skript python data" onclick="openModal('modal-p4')">
+      <span class="card-badge orange">Automatizace</span>
+      <h3>LinkedIn → CRM automatizace</h3>
+      <p>Naprogramuj automatizaci pro stahování dat z LinkedIn do CRM.</p>
+      <div class="tags"><span class="tag">LinkedIn</span><span class="tag">CRM</span><span class="tag">Skript</span></div>
+    </div>
+
+    <div class="card" data-category="prompts" data-keywords="zpětná vazba web obsah marketing zákazníci" onclick="openModal('modal-p5')">
+      <span class="card-badge purple">Marketing</span>
+      <h3>Analýza zpětné vazby → web</h3>
+      <p>Analyzuj zpětnou vazbu zákazníků a navrhni obsah pro web.</p>
+      <div class="tags"><span class="tag">Zpětná vazba</span><span class="tag">Web</span></div>
+    </div>
+
+    <div class="card" data-category="prompts" data-keywords="deep research dotace průzkum internet" onclick="openModal('modal-p6')">
+      <span class="card-badge">Research</span>
+      <h3>Průzkum dotací</h3>
+      <p>Deep research prompt – zjisti aktuální možnosti dotací pro firmu.</p>
+      <div class="tags"><span class="tag">Deep Research</span><span class="tag">Dotace</span></div>
+    </div>
+
+  </div>
+
+  <!-- TOOLS -->
+  <div class="section-title" data-category="tools">🛠 Doporučené nástroje</div>
+  <div class="grid" id="tools-grid">
+
+    <div class="card" data-category="tools" data-keywords="claude anthropic model chat nejinteligentnější konverzace">
+      <span class="card-badge">Konverzace</span>
+      <h3>Claude (Anthropic)</h3>
+      <p>Dle Filipa nejinteligentnější model. Výborný pro komplexní analýzy, práci s daty a pokročilé funkce. Projekt = uložený asistent.</p>
+      <div class="tags"><span class="tag">claude.ai</span><span class="tag">Placený</span><span class="tag">Doporučeno</span></div>
+    </div>
+
+    <div class="card" data-category="tools" data-keywords="notebooklm google veřejná data podcast youtube PDF analýza">
+      <span class="card-badge blue">Analýza dat</span>
+      <h3>NotebookLM (Google)</h3>
+      <p>Ideální pro analýzu velkého množství dokumentů. Nahraje PDF, YouTube videa, texty. Generuje podcasty a myšlenkové mapy. Pro veřejná data.</p>
+      <div class="tags"><span class="tag">notebooklm.google.com</span><span class="tag">Zdarma</span></div>
+    </div>
+
+    <div class="card" data-category="tools" data-keywords="cursor programování agentní vibe coding soubory lokální IDE">
+      <span class="card-badge green">Programování</span>
+      <h3>Cursor</h3>
+      <p>Agentní programovací nástroj. Pracuje s lokálními soubory. Ideální pro vibe coding a správu složek. Filip ho používá denně.</p>
+      <div class="tags"><span class="tag">cursor.com</span><span class="tag">Agentní</span><span class="tag">IDE</span></div>
+    </div>
+
+    <div class="card" data-category="tools" data-keywords="chatgpt openai obrázky GPT model">
+      <span class="card-badge orange">Konverzace</span>
+      <h3>ChatGPT (OpenAI)</h3>
+      <p>GPT přes chatovací rozhraní. Filip používá pro generování obrázků a jako druhý chatovací nástroj. GPT = uložený asistent.</p>
+      <div class="tags"><span class="tag">chatgpt.com</span><span class="tag">Placený</span></div>
+    </div>
+
+    <div class="card" data-category="tools" data-keywords="makary český startup web prezentace nabídka vibe coding">
+      <span class="card-badge purple">Vibe Coding</span>
+      <h3>Makary (CZ startup)</h3>
+      <p>Český nástroj pro tvorbu webů, prezentací a nabídek slovním zadáním. Účastníci FAIL dostávají 10M kreditů zdarma.</p>
+      <div class="tags"><span class="tag">makary.ai</span><span class="tag">Česky</span><span class="tag">FAIL kredity</span></div>
+    </div>
+
+    <div class="card" data-category="tools" data-keywords="claude code terminál programování agentní příkazová řádka">
+      <span class="card-badge">Programování</span>
+      <h3>Claude Code</h3>
+      <p>AI asistent přímo v terminálu. Agentní práce s lokálními soubory a projekty. Pokročilé použití pro vývojáře.</p>
+      <div class="tags"><span class="tag">CLI</span><span class="tag">Agentní</span><span class="tag">Pokročilé</span></div>
+    </div>
+
+    <div class="card" data-category="tools" data-keywords="artificial analysis porovnání modelů benchmark intel">
+      <span class="card-badge blue">Srovnání</span>
+      <h3>Artificial Analysis</h3>
+      <p>Web pro porovnání AI modelů – inteligence, rychlost, cena. Doporučeno pro výběr správného modelu.</p>
+      <div class="tags"><span class="tag">artificialanalysis.ai</span><span class="tag">Benchmark</span></div>
+    </div>
+
+    <div class="card" data-category="tools" data-keywords="gemini google flash pro model rychlý">
+      <span class="card-badge green">Konverzace</span>
+      <h3>Gemini (Google)</h3>
+      <p>Google AI model. Gem = uložený asistent. Dobrá integrace s Google Workspace. Gemini 3.1 mezi top modely.</p>
+      <div class="tags"><span class="tag">gemini.google.com</span><span class="tag">Google</span></div>
+    </div>
+
+  </div>
+
+  <!-- CONCEPTS -->
+  <div class="section-title" data-category="concepts">📖 Klíčové pojmy</div>
+  <div class="grid" id="concepts-grid">
+
+    <div class="card" data-category="concepts" data-keywords="vibe working coding karpathy AI exekuce zadávání práce programátor" onclick="openModal('modal-c1')">
+      <span class="card-badge">Princip</span>
+      <h3>Vibe Working / Vibe Coding</h3>
+      <p>Práce s AI kde člověk zadává cíle a vizi, AI exekutuje. Přichází s tím, jak AI přebírá stále více práce.</p>
+    </div>
+
+    <div class="card" data-category="concepts" data-keywords="90 10 pareto delegování AI dokončí prvních posledních" onclick="openModal('modal-c2')">
+      <span class="card-badge blue">Princip</span>
+      <h3>Princip 90-10</h3>
+      <p>AI udělá 90% práce, člověk doladí 10%. Nebo: člověk věnuje 90% péči zadání, AI dokončí 10% výstup.</p>
+    </div>
+
+    <div class="card" data-category="concepts" data-keywords="agency proaktivita odpovědnost high agency dovednost budoucnosti">
+      <span class="card-badge green">Mindset</span>
+      <h3>Agency</h3>
+      <p>Proaktivita a schopnost převzít odpovědnost bez čekání na instrukce. Nejdůležitější dovednost budoucnosti dle Filipa.</p>
+    </div>
+
+    <div class="card" data-category="concepts" data-keywords="deep research průzkum internet 905 zdrojů report analýza">
+      <span class="card-badge orange">Funkce</span>
+      <h3>Deep Research</h3>
+      <p>AI průzkum internetu. Claude prohledal 905 zdrojů za 63 minut a vytvořil detailní report s odkazovanými zdroji.</p>
+    </div>
+
+    <div class="card" data-category="concepts" data-keywords="shadow IT ai bezpečnost firemní nástroje zakázané">
+      <span class="card-badge purple">Bezpečnost</span>
+      <h3>Shadow AI</h3>
+      <p>Používání AI nástrojů zaměstnanci bez IT schválení. Přes 80% organizací. Projev dobré firemní kultury i riziko.</p>
+    </div>
+
+    <div class="card" data-category="concepts" data-keywords="fail first attempt in learning iterace 10000 naval ravikant">
+      <span class="card-badge">Filozofie</span>
+      <h3>FAIL = First Attempt In Learning</h3>
+      <p>Mistrovství není 10 000 hodin, ale 10 000 iterací. Chyba je součástí učení, ne důvod k zastavení.</p>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="modal-s1" onclick="closeModalOutside(event, 'modal-s1')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-s1')">✕</button>
+    <span class="card-badge">Modul 1</span>
+    <h2>AI First Mindset</h2>
+    <p class="meta">Řečník: Filip Dřímalka | Jedenáctý běh programu Future AI Leader</p>
+    <h3>📋 Shrnutí</h3>
+    <p>Úvodní modul programu Future AI Leader. Filip Dřímalka představuje filozofii programu, příklady práce s AI z vlastní praxe a klíčový mindset potřebný pro úspěšnou adopci AI.</p>
+    <h3>🎯 Klíčové body</h3>
+    <ul>
+      <li><strong>FAIL = First Attempt In Learning</strong> – chyba je součástí učení, ne selhání</li>
+      <li><strong>Agency</strong> – proaktivita je nejdůležitější dovednost budoucnosti</li>
+      <li><strong>Nezáleží na nástroji</strong> – principy jsou důležitější než konkrétní klikání v ChatGPT</li>
+      <li><strong>Člověk je klíčový</strong> – 129 promptů na návrh webové stránky, vše řízeno člověkem</li>
+      <li><strong>Systém</strong> – klíčové slovo celého programu. Ne ad-hoc využití, ale systém práce</li>
+      <li><strong>10 000 iterací</strong>, ne 10 000 hodin – mistrovství v AI</li>
+    </ul>
+    <h3>💡 Praktické příklady z Filipovy praxe</h3>
+    <ul>
+      <li>Asistent pro zlepšování anglického psaní (vždy vysvětlí co a proč změnil)</li>
+      <li>Asistent pro analýzu mluvené angličtiny (20× "basically", 25× "you know")</li>
+      <li>Porovnání CZ a EN vydání knihy: agent v Cursoru, 900 000 znaků, cena $1.04</li>
+      <li>Strategie pro nový produkt: agent 40 minut analyzoval Twitter, výsledek = produkt "AssessMan"</li>
+    </ul>
+    <h3>🏫 O programu</h3>
+    <ul>
+      <li>10 týdnů, každý pátek 90 minut</li>
+      <li>Osobní doporučení v pondělí (AI z přepisu + osobní profil)</li>
+      <li>Kolektivní inteligence – anonymní sdílení use casů mezi účastníky</li>
+      <li>Systémový megaprompt pro každého účastníka</li>
+      <li>Super Busy Mode – 30min shrnutí pro manažery bez času</li>
+    </ul>
+    <h3>🏢 Účastnící firmy (11. běh)</h3>
+    <p>MND, AirBank, Eresoft, KBC, Travelport, Galas a další</p>
+    <blockquote>"Ty základy nepůjde obejít. Kdo si na to udělá čas a půjde do toho, získá obrovskou výhodu."</blockquote>
+    <blockquote>"Nejtěžší fail je, když děláme věci, které za nás už dávno může dělat AI."</blockquote>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-s2" onclick="closeModalOutside(event, 'modal-s2')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-s2')">✕</button>
+    <span class="card-badge blue">Modul 2</span>
+    <h2>Jak využít nástroje s AI</h2>
+    <p class="meta">Řečník: Filip Dřímalka | 20. března 2026</p>
+    <h3>📋 Shrnutí</h3>
+    <p>Kompletní přehled AI nástrojů pro profesionály. Jak vybrat správný model, jak pracovat bezpečně a jak si nastavit workflow s chatovacími a programovacími nástroji.</p>
+    <h3>🧠 AI Modely</h3>
+    <ul>
+      <li><strong>Top modely 2026:</strong> Gemini 3.1, GPT-5.4, Claude Opus</li>
+      <li>3 vlastnosti: inteligence, rychlost, cena</li>
+      <li><strong>Reasoning modely</strong> – pro komplexní úkoly (pomalejší, chytřejší)</li>
+      <li><strong>Rychlé modely</strong> – pro jednoduché úkoly (mail, shrnutí)</li>
+      <li>Doporučeno mít aspoň 2 nástroje s různými modely</li>
+    </ul>
+    <h3>🔒 Bezpečnost</h3>
+    <ul>
+      <li><strong>3 úrovně dat:</strong> veřejné / obchodní / důvěrné</li>
+      <li>Placený nástroj + vypnuté trénování = bezpečné</li>
+      <li>Bezplatný nebo neznámý nástroj = riziko</li>
+      <li>Shadow AI jako projev kultury, ne problém</li>
+    </ul>
+    <h3>🛠 Filipův setup</h3>
+    <ul>
+      <li><strong>90% chatů:</strong> Claude</li>
+      <li><strong>Obrázky:</strong> ChatGPT</li>
+      <li><strong>Veřejná data:</strong> NotebookLM</li>
+      <li><strong>Vše ostatní / kód:</strong> Cursor</li>
+    </ul>
+    <h3>📱 Kategorie nástrojů</h3>
+    <ul>
+      <li><strong>Konverzační:</strong> Claude, ChatGPT, Gemini, NotebookLM</li>
+      <li><strong>Vibe coding (web):</strong> Makary (10M kreditů pro FAIL)</li>
+      <li><strong>Pokročilé:</strong> Cursor, VS Code + Copilot, Claude Code</li>
+    </ul>
+    <blockquote>"Průměrný nástroj je nejnebezpečnější – vypadá dobře, ale nedává dobré výsledky. Pak si myslíme, že celá kategorie nefunguje."</blockquote>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-s3" onclick="closeModalOutside(event, 'modal-s3')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-s3')">✕</button>
+    <span class="card-badge green">Modul 3</span>
+    <h2>Symbioza s AI</h2>
+    <p class="meta">Řečník: Filip Dřímalka</p>
+    <h3>📋 Shrnutí</h3>
+    <p>Jak pracovat v symbióze s AI. 5 principů nového způsobu práce, orchestrace práce a přechod od nahodilého k systematickému využití AI.</p>
+    <h3>5 principů nového způsobu práce</h3>
+    <ul>
+      <li><strong>1. Vibe Working</strong> – člověk zadává cíle a vizi, AI exekutuje. Budeme muset "přestat rozumět všemu".</li>
+      <li><strong>2. Princip 90-10</strong> – AI udělá 90%, člověk doladí 10% (nebo naopak: člověk věnuje 90% péči zadání)</li>
+      <li><strong>3+.</strong> Orchestrace, systém práce, delegování</li>
+    </ul>
+    <h3>💡 Klíčové myšlenky</h3>
+    <ul>
+      <li>Symbioza = věnovat se práci, kde aplikuji talenty a vytvářím hodnotu</li>
+      <li>Různé cesty fungují – Filip píše 10% LinkedIn postu, Radka Legerská píše 90% a AI doladí</li>
+      <li>Přechod od nahodilého chatování k systematickým projektům a asistentům</li>
+      <li>Experimentování je pevnou součástí adopce AI (nelze obejít)</li>
+    </ul>
+    <h3>🎭 Emoce a adopce</h3>
+    <ul>
+      <li>120 účastníků zažilo frustraci – normální součást cesty</li>
+      <li>102 ztratilo pojem o čase</li>
+      <li>Intenzita emocí na začátku je přirozená – s praxí klesá</li>
+    </ul>
+    <blockquote>"Práce s AI je 90% mindset."</blockquote>
+    <blockquote>"Many ways to win – každý má trochu jiný způsob práce a uvažování."</blockquote>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-s4" onclick="closeModalOutside(event, 'modal-s4')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-s4')">✕</button>
+    <span class="card-badge orange">Modul 4</span>
+    <h2>Druhý mozek</h2>
+    <p class="meta">Řečník: Filip Dřímalka | 2. dubna 2026</p>
+    <h3>📋 Shrnutí</h3>
+    <p>Druhý mozek jako superschopnost v éře AI. Systém ukládání, čištění a využívání znalostí s přímým napojením AI nástrojů.</p>
+    <h3>🧠 Klíčové myšlenky</h3>
+    <ul>
+      <li>Druhý mozek = živoucí systém, ne jen archiv poznámek</li>
+      <li>Čím lepší kontext, tím lepší výstup AI (i u nejchytřejších modelů)</li>
+      <li>Příprava znalostí + jejich využití – obojí dnes lze dělat s AI</li>
+      <li>PARA metoda (Tiago Forte) je základ, ale v éře AI nestačí</li>
+    </ul>
+    <h3>⚠️ Pozor na nástroje Microsoftu</h3>
+    <ul>
+      <li>Loop, OneNote = dobré poznámkové bloky, ale <strong>nelze jednoduše napojit na AI</strong></li>
+      <li>SharePoint/OneDrive = napojitelné</li>
+      <li>Doporučení: volit nástroj, který AI umí přímo číst (Obsidian, Notion, plain text/MD)</li>
+    </ul>
+    <h3>🛠 Doporučené použití</h3>
+    <ul>
+      <li>NotebookLM pro zpracování aha momentů, feedback, meeting notes</li>
+      <li>Ukládání promptů a asistentů jako součást druhého mozku</li>
+      <li>AI pro přípravu i využití znalostí (ne jen výměna informací)</li>
+    </ul>
+    <h3>🎉 Aha momenty z předchozích modulů</h3>
+    <ul>
+      <li>Nejfrekventovanější: Claude, kódování s AI, budování systémů</li>
+      <li>Přechod od webového chatu do kódovacího editoru = velký posun</li>
+      <li>Investice do kontextu radikálně mění kvalitu výstupu</li>
+    </ul>
+    <blockquote>"Kontext je možná ještě důležitější než samotné prompty."</blockquote>
+    <blockquote>"Shit in, shit out – ale dnes si informace zpracováváte vy sami, bez závislosti na IT oddělení."</blockquote>
+  </div>
+</div>
+
+<!-- PROMPT MODALS -->
+<div class="modal-overlay" id="modal-p1" onclick="closeModalOutside(event, 'modal-p1')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-p1')">✕</button>
+    <span class="card-badge">Obchod</span>
+    <h2>Nabídka z přepisu hovoru</h2>
+    <h3>Prompt</h3>
+    <div class="prompt-box">Analyzuj přepis našeho rozhovoru a nakóduj podle toho nabídku spolupráce...</div>
+    <h3>Jak použít</h3>
+    <ol style="padding-left:1.2rem;font-size:0.9rem;">
+      <li>Nahrajte přepis obchodního hovoru (Teams, Zoom, osobní schůzka)</li>
+      <li>Přidejte kontext o vaší firmě a produktu</li>
+      <li>AI vytvoří personalizovanou nabídku spolupráce</li>
+      <li>Dolaďte finálních 10%</li>
+    </ol>
+    <h3>Vhodné nástroje</h3>
+    <p>Claude (projekt s firemním kontextem), ChatGPT GPT</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-p2" onclick="closeModalOutside(event, 'modal-p2')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-p2')">✕</button>
+    <span class="card-badge blue">Dokumentace</span>
+    <h2>Dokumentace ze souborů</h2>
+    <h3>Prompt</h3>
+    <div class="prompt-box">Analyzuj všechny tyto soubory a zpracuj z toho dokumentaci pro naše lidi i AI agenty...</div>
+    <h3>Jak použít</h3>
+    <ol style="padding-left:1.2rem;font-size:0.9rem;">
+      <li>Nahrát relevantní firemní soubory (Excel, Word, PDF, přepisy)</li>
+      <li>Upřesnit: pro jaké role má být dokumentace (onboarding, AI agenti, zákazníci)</li>
+      <li>AI strukturuje a čistí znalosti do použitelné dokumentace</li>
+    </ol>
+    <h3>Vhodné nástroje</h3>
+    <p>Cursor (lokální soubory), Claude s nahranými dokumenty, NotebookLM</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-p3" onclick="closeModalOutside(event, 'modal-p3')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-p3')">✕</button>
+    <span class="card-badge green">Produkt</span>
+    <h2>PRD pro novou funkci</h2>
+    <h3>Prompt</h3>
+    <div class="prompt-box">Vytvoř PRD pro novou funkci – tvorbu doporučení na míru pro uživatele našeho portálu...</div>
+    <h3>Co je PRD</h3>
+    <p style="font-size:0.9rem;">Product Requirements Document – dokument specifikující požadavky, user stories, acceptance criteria a technické detaily pro vývojový tým.</p>
+    <h3>Jak použít</h3>
+    <ol style="padding-left:1.2rem;font-size:0.9rem;">
+      <li>Popsat záměr funkce přirozeným jazykem</li>
+      <li>Přidat kontext o produktu, uživatelích a technologickém stacku</li>
+      <li>AI vytvoří strukturovaný PRD</li>
+      <li>Projít s vývojovým týmem a doplnit</li>
+    </ol>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-p4" onclick="closeModalOutside(event, 'modal-p4')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-p4')">✕</button>
+    <span class="card-badge orange">Automatizace</span>
+    <h2>LinkedIn → CRM automatizace</h2>
+    <h3>Prompt</h3>
+    <div class="prompt-box">Naprogramuj automatizaci, která bude stahovat data z LinkedIn a obohacovat naše CRM...</div>
+    <h3>Přístup</h3>
+    <ol style="padding-left:1.2rem;font-size:0.9rem;">
+      <li>Specifikovat CRM systém (HubSpot, Salesforce, vlastní...)</li>
+      <li>AI navrhne technické řešení (Python skript, Make.com, Zapier...)</li>
+      <li>Iterovat přes Cursor nebo Claude Code</li>
+      <li>Testovat na malém vzorku dat</li>
+    </ol>
+    <h3>Upozornění</h3>
+    <p style="font-size:0.9rem;color:#dc2626;">LinkedIn API má přísná omezení. Automatizované scraping je v rozporu s ToS. Konzultujte s IT/právním oddělením.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-p5" onclick="closeModalOutside(event, 'modal-p5')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-p5')">✕</button>
+    <span class="card-badge purple">Marketing</span>
+    <h2>Analýza zpětné vazby → web</h2>
+    <h3>Prompt</h3>
+    <div class="prompt-box">Analyzuj tuto zpětnou vazbu a navrhni jaké informace přidat na náš web...</div>
+    <h3>Jak použít</h3>
+    <ol style="padding-left:1.2rem;font-size:0.9rem;">
+      <li>Nahrát zákaznické recenze, support tickety, NPS výsledky, survey data</li>
+      <li>AI identifikuje vzory a nejčastější témata</li>
+      <li>Výstup: konkrétní doporučení pro obsah webu</li>
+    </ol>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-p6" onclick="closeModalOutside(event, 'modal-p6')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-p6')">✕</button>
+    <span class="card-badge">Research</span>
+    <h2>Průzkum dotací</h2>
+    <h3>Prompt</h3>
+    <div class="prompt-box">Udělej průzkum na internetu a zjisti mi aktuální možnosti dotací pro naši společnost...</div>
+    <h3>Jak použít</h3>
+    <ol style="padding-left:1.2rem;font-size:0.9rem;">
+      <li>Aktivovat Deep Research funkci v nástroji (Claude, ChatGPT, Perplexity)</li>
+      <li>Přidat kontext: odvětví, velikost firmy, kraj, zaměření</li>
+      <li>AI prohledá internet a vytvoří přehled aktuálních dotačních výzev</li>
+      <li>Výsledky ověřit přímo na zdrojových stránkách (MPO, SFPI, EU fondy)</li>
+    </ol>
+    <h3>Tip</h3>
+    <p style="font-size:0.9rem;">Nejprve nechte AI vypracovat přehled, pak výstup znovu vložte do AI a řekněte: "Na základě tohoto přehledu vytvoř žádost pro naši firmu."</p>
+  </div>
+</div>
+
+<!-- CONCEPT MODALS -->
+<div class="modal-overlay" id="modal-c1" onclick="closeModalOutside(event, 'modal-c1')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-c1')">✕</button>
+    <span class="card-badge">Princip</span>
+    <h2>Vibe Working / Vibe Coding</h2>
+    <h3>Původ</h3>
+    <p style="font-size:0.9rem;">Termín "Vibe Coding" zavedl Andrej Karpathy pro programování bez ručního psaní kódu. Filip Dřímalka ho rozšiřuje na celou znalostní práci jako "Vibe Working".</p>
+    <h3>Co to znamená</h3>
+    <ul>
+      <li>Člověk zadává cíle, vizi a směr</li>
+      <li>AI exekutuje většinu práce</li>
+      <li>Člověk iteruje, dává zpětnou vazbu, kontroluje</li>
+      <li>V programování: firmy kde AI píše 100% kódu, programátor nepíše ručně ani řádek</li>
+    </ul>
+    <h3>Implikace</h3>
+    <ul>
+      <li>Musíme se smířit s tím, že "přestaneme rozumět všemu"</li>
+      <li>Budeme muset věřit modelům a systémům</li>
+      <li>Nové mechanismy kontroly kvality výstupů</li>
+    </ul>
+    <blockquote>"Zadávám cíle, uzavírám svou vizi, určuji směr. Pořád jsem to já, kdo iteruje a dává zpětnou vazbu, ale většinu práce za mě odmaká AI."</blockquote>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-c2" onclick="closeModalOutside(event, 'modal-c2')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-c2')">✕</button>
+    <span class="card-badge blue">Princip</span>
+    <h2>Princip 90-10</h2>
+    <h3>Definice</h3>
+    <p style="font-size:0.9rem;">Všichni členové týmu jsou schopni postavit první verzi čehokoli do týdne, ve spolupráci s AI.</p>
+    <h3>Různé aplikace</h3>
+    <ul>
+      <li><strong>AI udělá 90%, člověk doladí 10%</strong> – nejčastější forma</li>
+      <li><strong>Člověk věnuje 90% péči zadání, AI dokončí</strong> – pro kritické výstupy</li>
+      <li><strong>Práce s AI je 90% mindset</strong> – jak přemýšlíme, ne co klikáme</li>
+    </ul>
+    <h3>Příklady</h3>
+    <ul>
+      <li>Grafik si nechá napsat text (90% AI, 10% doladit)</li>
+      <li>Podnikatel si nechá postavit web (90% AI, 10% specialista)</li>
+      <li>Právníci kontrolují AI smlouvy (10% jejich práce, 90% AI generuje)</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <p>FAIL – <strong>Future AI Leader</strong> | Program: Filip Dřímalka, Ability a.s.</p>
+  <p style="margin-top:0.3rem;">Znalostní báze pro účastníky programu. <strong>Máš 4 z 9 přepisů</strong> – doplň zbývající moduly.</p>
+</footer>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function closeModalOutside(e, id) {
+    if (e.target === document.getElementById(id)) closeModal(id);
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay.open').forEach(m => {
+        m.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    }
+  });
+
+  function filterTab(btn, category) {
+    document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cards = document.querySelectorAll('.card');
+    const titles = document.querySelectorAll('.section-title');
+    if (category === 'all') {
+      cards.forEach(c => c.classList.remove('hidden'));
+      titles.forEach(t => t.classList.remove('hidden'));
+    } else {
+      cards.forEach(c => {
+        c.classList.toggle('hidden', c.dataset.category !== category);
+      });
+      titles.forEach(t => {
+        t.classList.toggle('hidden', t.dataset.category !== category);
+      });
+    }
+  }
+
+  function filterContent() {
+    const query = document.getElementById('searchInput').value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      const text = (card.innerText + ' ' + (card.dataset.keywords || '')).toLowerCase();
+      card.classList.toggle('hidden', query.length > 0 && !text.includes(query));
+    });
+  }
+</script>
+</body>
+</html>
