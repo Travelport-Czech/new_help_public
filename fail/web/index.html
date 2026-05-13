@@ -286,13 +286,71 @@
       </div>
     </div>
 
-    <div class="card" data-category="sessions" style="opacity:0.5;" data-keywords="modul 5 6 7 8 9 10 chybí">
-      <span class="card-badge purple">Moduly 5–10</span>
-      <h3>Chybí přepisy</h3>
-      <p>Přepisy modulů 5–10 zatím nejsou k dispozici. Doplňte je nahráním dalších souborů.</p>
+    <div class="card" data-category="sessions" data-keywords="obsah tvorba texty prezentace grafika audio video idea file canvas linkedin dominik reichl roman tvrdý" onclick="openModal('modal-s5')">
+      <span class="card-badge purple">Modul 5</span>
+      <h3>Tvorba obsahu s AI</h3>
+      <p>6 kategorií obsahu, Idea File, Canvas/Artifact, ukázky LinkedIn asistenta a HTML tonality slideru.</p>
       <div class="tags">
-        <span class="tag">Brzy</span>
+        <span class="tag">Obsah</span>
+        <span class="tag">Texty</span>
+        <span class="tag">Idea File</span>
+        <span class="tag">Canvas</span>
       </div>
+    </div>
+
+    <div class="card" data-category="sessions" data-keywords="projekty work breakdown structure WBS compound engineering BUF feedback david lorincz reklamy jakub šíma" onclick="openModal('modal-s6')">
+      <span class="card-badge">Modul 6</span>
+      <h3>Práce na projektech</h3>
+      <p>5fázový framework, AI WBS prompt, compound engineering, BUF kultura, automatizovaný pipeline 51 reklamních kreativ.</p>
+      <div class="tags">
+        <span class="tag">Projekty</span>
+        <span class="tag">WBS</span>
+        <span class="tag">Compound</span>
+        <span class="tag">BUF</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="sessions" data-keywords="vibe coding programování lovable replit cursor claude code codex github vercel supabase antigravity" onclick="openModal('modal-s7')">
+      <span class="card-badge blue">Modul 7</span>
+      <h3>Vibe Coding</h3>
+      <p>3 kategorie vibe coding projektů, rizika (bezpečnost, scalabilita, technický dluh), 5 fází vývoje a live demos od účastníků.</p>
+      <div class="tags">
+        <span class="tag">Vibe Coding</span>
+        <span class="tag">Lovable</span>
+        <span class="tag">Cursor</span>
+        <span class="tag">Rizika</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="sessions" data-keywords="data insighty tabulky analytika context engineering streamlit cursor API strukturovaná nestrukturovaná kofola zendesk" onclick="openModal('modal-s8')">
+      <span class="card-badge green">Modul 8</span>
+      <h3>Data a insighty</h3>
+      <p>Od tabulek k rozhodnutím – strukturovaná vs. nestrukturovaná data, context engineering, 3 generace analytiky, Streamlit.</p>
+      <div class="tags">
+        <span class="tag">Data</span>
+        <span class="tag">Analytika</span>
+        <span class="tag">Context Eng.</span>
+        <span class="tag">Streamlit</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="sessions" data-keywords="automatizace agenti make n8n relay workflow petr vávra stanley shipment tracking n8n duvo mastra hermes" onclick="openModal('modal-s9')">
+      <span class="card-badge orange">Modul 9</span>
+      <h3>Automatizace a AI agenti</h3>
+      <p>AI agenti vs. automatizace, nástroje Make/n8n/Relay, hosté Petr Vávra a Stanley K., reálné příklady nasazení.</p>
+      <div class="tags">
+        <span class="tag">Automatizace</span>
+        <span class="tag">Agenti</span>
+        <span class="tag">Make</span>
+        <span class="tag">n8n</span>
+      </div>
+    </div>
+
+    <div class="card" data-category="sessions" style="opacity:0.5;" data-keywords="modul 10 chybí závěrečný">
+      <span class="card-badge purple">Modul 10</span>
+      <h3>Chybí přepis</h3>
+      <p>Přepis závěrečného modulu zatím není k dispozici.</p>
+      <div class="tags"><span class="tag">Brzy</span></div>
     </div>
 
   </div>
@@ -601,6 +659,165 @@
   </div>
 </div>
 
+<!-- SESSION 5-9 MODALS -->
+<div class="modal-overlay" id="modal-s5" onclick="closeModalOutside(event, 'modal-s5')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-s5')">✕</button>
+    <span class="card-badge purple">Modul 5</span>
+    <h2>Tvorba obsahu s AI</h2>
+    <p class="meta">Řečník: Filip Dřímalka | 10. dubna 2026</p>
+    <h3>📋 Shrnutí</h3>
+    <p>Šest kategorií obsahu, který lze tvořit s AI. Od textů přes prezentace, grafiku a audio/video až po programované výstupy a automatizace. Klíčový koncept: Idea File jako systém pro opakované použití promptů.</p>
+    <h3>6 kategorií obsahu</h3>
+    <ul>
+      <li><strong>Texty</strong> – posty, emaily, články, reporty, smlouvy</li>
+      <li><strong>Prezentace</strong> – PowerPoint, Canva, Gamma, Pitch</li>
+      <li><strong>Grafika</strong> – obrázky, loga, ilustrace (Midjourney, DALL-E, Ideogram)</li>
+      <li><strong>Audio/Video</strong> – hlasové klipy, videa, podcasty (ElevenLabs, HeyGen, Sora)</li>
+      <li><strong>Programované výstupy</strong> – HTML, PDF, interaktivní reporty, weby</li>
+      <li><strong>Automatizace obsahu</strong> – opakující se generování bez lidského zásahu</li>
+    </ul>
+    <h3>💡 Idea File</h3>
+    <p>Strukturovaný dokument s popisem, jak řešit konkrétní opakující se úlohu. Uložený v AI projektu/GPT. Eliminuje nutnost vytvářet prompt znovu pokaždé.</p>
+    <h3>🎭 Ukázky od účastníků</h3>
+    <ul>
+      <li><strong>Dominik Reichl</strong> – LinkedIn asistent s Idea File pro konzistentní styl</li>
+      <li><strong>Roman Tvrdý</strong> – HTML tonality slider: posuvník ovládá tón LinkedIn postu</li>
+    </ul>
+    <h3>🛠 Canvas / Artifact</h3>
+    <p>Funkce Claude (Artifact) a ChatGPT (Canvas) – oddělené pracovní okno pro interaktivní úpravy obsahu přímo v chatu.</p>
+    <blockquote>"Nejde o to, kolik obsahu vytvoříte. Jde o to, zda obsah vytváří hodnotu pro vaše zákazníky."</blockquote>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-s6" onclick="closeModalOutside(event, 'modal-s6')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-s6')">✕</button>
+    <span class="card-badge">Modul 6</span>
+    <h2>Práce na projektech v době AI</h2>
+    <p class="meta">Řečník: Filip Dřímalka | 17. dubna 2026</p>
+    <h3>📋 Shrnutí</h3>
+    <p>Nové principy projektové práce v éře AI. Malé týmy s AI překonají velké korporace. 5fázový framework od přípravy po nasazení, compound engineering jako základ škálování.</p>
+    <h3>5 fází projektu s AI</h3>
+    <ol style="padding-left:1.2rem;font-size:0.9rem;">
+      <li><strong>Příprava</strong> – research, AI WBS prompt, plán</li>
+      <li><strong>Prototyp</strong> – rychlý MVP za hodiny/dny</li>
+      <li><strong>Realizace</strong> – iterace a doladění</li>
+      <li><strong>Compound</strong> – stavění na předchozím výstupu, úroková práce</li>
+      <li><strong>Spolupráce</strong> – sdílení, feedback, BUF kultura</li>
+    </ol>
+    <h3>💡 AI Work Breakdown Structure (WBS)</h3>
+    <p>Prompt pro rozložení projektu na kroky. Vstup: popis projektu → výstup: strukturovaný WBS připravený pro exekuci.</p>
+    <h3>🎭 Ukázky od účastníků</h3>
+    <ul>
+      <li><strong>David Lorincz</strong> – plně automatizovaný pipeline 51 reklamních kreativ pro 17 služeb</li>
+      <li><strong>Jakub Šíma</strong> – o víkendu vytvořil znalostní systém + support chatbot (z prokrastinace k fungujícímu produktu)</li>
+    </ul>
+    <h3>🤝 BUF kultura</h3>
+    <p>Brutally Honest Feedback – kultura otevřené zpětné vazby, kde AI funguje jako nestranný facilitátor hodnocení.</p>
+    <blockquote>"Malý tým s AI poráží velkou korporaci. Tohle není otázka budoucnosti – děje se to teď."</blockquote>
+    <blockquote>"Compound engineering: každý výstup je vstupem pro další krok. Znalosti se úročí."</blockquote>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-s7" onclick="closeModalOutside(event, 'modal-s7')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-s7')">✕</button>
+    <span class="card-badge blue">Modul 7</span>
+    <h2>Vibe Coding</h2>
+    <p class="meta">Řečník: Filip Dřímalka | 24. dubna 2026</p>
+    <h3>📋 Shrnutí</h3>
+    <p>Vibe coding – programování přirozeným jazykem bez ručního psaní kódu. 3 kategorie projektů, reálná rizika a jak je řídit, 5 fází vývoje. Živé ukázky od účastníků.</p>
+    <h3>3 kategorie projektů</h3>
+    <ul>
+      <li><strong>Interní nástroje</strong> – jen vy, nízké riziko, experimentujte volně</li>
+      <li><strong>Zákaznické aplikace</strong> – střední riziko, nutná bezpečnostní kontrola</li>
+      <li><strong>Kritické systémy</strong> – vysoké riziko, vždy senior vývojář v týmu</li>
+    </ul>
+    <h3>⚠️ Rizika vibe codingu</h3>
+    <ul>
+      <li>Bezpečnostní díry (SQL injection, chybějící autentizace)</li>
+      <li>Špatná škálovatelnost (funguje pro 10 uživatelů, padne pro 1000)</li>
+      <li>Technický dluh (AI generuje funkční, ne čistý kód)</li>
+      <li>Závislost na jednom modelu</li>
+      <li>Klesající radost z iterací ("vibe burnout")</li>
+    </ul>
+    <h3>🛠 Nástroje</h3>
+    <p>Web apps: <strong>Lovable, Replit, Macaly</strong> | Lokální: <strong>Cursor, Claude Code, Codex</strong> | Deploy: <strong>GitHub, Vercel, Supabase</strong></p>
+    <h3>🎭 Live ukázky</h3>
+    <ul>
+      <li><strong>Vladka</strong> – vzdělávací aplikace pro správu knihovny</li>
+      <li><strong>Jindra (Jiří)</strong> – systém správy účtenek s Telegram botem</li>
+      <li><strong>Jan Nosal + Tomáš Hadas</strong> – BI prototyp pro sledování jízdy na kole do práce</li>
+    </ul>
+    <blockquote>"Just-in-time software – aplikace, které existují jen tehdy, kdy je potřebujeme." (Andrej Karpathy)</blockquote>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-s8" onclick="closeModalOutside(event, 'modal-s8')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-s8')">✕</button>
+    <span class="card-badge green">Modul 8</span>
+    <h2>Data a insighty</h2>
+    <p class="meta">Řečník: Filip Dřímalka | 30. dubna 2026</p>
+    <h3>📋 Shrnutí</h3>
+    <p>Od tabulek k rozhodnutím. Strukturovaná data (20 %) vs. nestrukturovaná (80 %). Jak vybrat správný nástroj podle objemu dat. Context engineering jako klíčový trend.</p>
+    <h3>📊 Pyramida dat</h3>
+    <ul>
+      <li><strong>Data</strong> → surová čísla a texty</li>
+      <li><strong>Informace</strong> → zpracovaná data (na co se ptají zákazníci?)</li>
+      <li><strong>Znalost</strong> → vzorce (který operátor je nejlepší?)</li>
+      <li><strong>Moudrost/Akce</strong> → rozhodnutí (oprav problém X, přidej do FAQ)</li>
+    </ul>
+    <h3>🛠 Správný nástroj pro objem dat</h3>
+    <ul>
+      <li><strong>5–10 dokumentů:</strong> klasický chatbot (Claude, ChatGPT)</li>
+      <li><strong>Desítky–stovky:</strong> Claude Cowork, Copilot Analyst</li>
+      <li><strong>Tisíce řádků:</strong> Cursor, Claude Code, Anthropic API</li>
+    </ul>
+    <h3>🎭 Příklady z praxe</h3>
+    <ul>
+      <li><strong>Filip – FAIL portál</strong>: segmentace účastníků (Champions 30%, aktivní 35%, spící 12%) na 6–7 promptů</li>
+      <li><strong>Filip – 308 Cursor konverzací</strong>: analýza za 18 min přes API, cena ~$1, výsledek: 70% sval / 30% mozek</li>
+      <li><strong>Pavel Šebesta</strong>: optimalizace výroby z hodin na 2 minuty pomocí Claude Projects</li>
+      <li><strong>Radek Juroška (Kofola)</strong>: nahrávky z porad → přepis → zápis s úkoly → Obsidian → Claude</li>
+      <li><strong>Simona B.</strong>: automatizované výběrové řízení (Google Forms + váhový systém + real-time dashboard)</li>
+    </ul>
+    <blockquote>"Data jsou ropa. Ale pokud s ní nic neděláte, nepřináší hodnotu."</blockquote>
+    <blockquote>"Velký trend není jenom prompt engineering, ale context engineering – jak připravit data tak, aby sloužila AI."</blockquote>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-s9" onclick="closeModalOutside(event, 'modal-s9')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-s9')">✕</button>
+    <span class="card-badge orange">Modul 9</span>
+    <h2>Automatizace a AI agenti</h2>
+    <p class="meta">Řečník: Filip Dřímalka | Hosté: Petr Vávra, Stanley K.</p>
+    <h3>📋 Shrnutí</h3>
+    <p>Rozdíl mezi automatizací a AI agenty. Kdy použít Make/Zapier, kdy n8n nebo Relay. Dva hosté sdílí reálné případy nasazení AI do produkce.</p>
+    <h3>🤖 Automatizace vs. AI Agenti</h3>
+    <ul>
+      <li><strong>Automatizace</strong> – pevně dané kroky, spouštěč → akce (Make, Zapier, n8n)</li>
+      <li><strong>AI Agent</strong> – sám plánuje kroky, reaguje na situaci, rozhoduje</li>
+      <li>V praxi: kombináce obojího – automatizace spouští agenty</li>
+    </ul>
+    <h3>🛠 Nástroje</h3>
+    <ul>
+      <li><strong>Make</strong> – vizuální low-code automatizace, populární v ČR</li>
+      <li><strong>n8n</strong> – open-source, self-hosted, pokročilé workflow</li>
+      <li><strong>Relay</strong> – automatizace s AI rozhodováním v každém kroku</li>
+      <li><strong>Mastra, Hermes, Duvo AI</strong> – agentní frameworky</li>
+    </ul>
+    <h3>🎭 Hosté</h3>
+    <ul>
+      <li><strong>Petr Vávra</strong> – n8n workflow pro opakující se byznys procesy, příklady z praxe</li>
+      <li><strong>Stanley K.</strong> – sledování zásilek: automatizace s AI pro e-commerce, real-time notifikace</li>
+    </ul>
+    <blockquote>"Agenta nestavíte proto, že je to cool. Stavíte ho proto, že řeší konkrétní opakující se problém."</blockquote>
+  </div>
+</div>
+
 <!-- PROMPT MODALS -->
 <div class="modal-overlay" id="modal-p1" onclick="closeModalOutside(event, 'modal-p1')">
   <div class="modal">
@@ -761,7 +978,7 @@
 
 <footer>
   <p>FAIL – <strong>Future AI Leader</strong> | Program: Filip Dřímalka, Ability a.s.</p>
-  <p style="margin-top:0.3rem;">Znalostní báze pro účastníky programu. <strong>Máš 4 z 9 přepisů</strong> – doplň zbývající moduly.</p>
+  <p style="margin-top:0.3rem;">Znalostní báze pro účastníky programu. <strong>9 z 10 modulů k dispozici</strong> – chybí jen modul 10.</p>
 </footer>
 
 <script>
