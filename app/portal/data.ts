@@ -121,7 +121,7 @@ export const CATEGORIES: Category[] = [
     desc: "Service fees, discounts, promo codes, special offers",
     href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices",
     articles: [
-      { title: "Configure Markup Rules", href: "/portal/getting-started/markup-rules" },
+      { title: "Markup rules and service fees", href: "/portal/getting-started/markup-rules" },
       { title: "Service Fees", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-handle-service-fees" },
       { title: "Service fees for 2OWs", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-prices-how-to-handle-service-fees-for-2ows" },
       { title: "Manage promo codes", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-manage-promocodes" },
@@ -150,15 +150,15 @@ export const CATEGORIES: Category[] = [
   },
   {
     icon: "👥", name: "Users",
-    desc: "Agents, roles, passwords, access rights",
+    desc: "Staff accounts, rights, account management",
     href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-users",
     articles: [
       { title: "Add a New User", href: "/portal/getting-started/add-user" },
-      { title: "Roles and Permissions", href: "/portal/getting-started/roles" },
-      { title: "Reset an Agent's Password", href: "/portal/getting-started/reset-password" },
-      { title: "Deactivate a User", href: "/portal/getting-started/deactivate-user" },
+      { title: "User Rights and Permissions", href: "/portal/getting-started/roles" },
+      { title: "Manage your own account", href: "/portal/getting-started/reset-password" },
+      { title: "Manage user accounts", href: "/portal/getting-started/deactivate-user" },
       { title: "Create new user access", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-a-new-user-s-access" },
-      { title: "Manage own user account", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-own-gol-ibe-user-s-account" },
+      { title: "Manage own user account (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-own-gol-ibe-user-s-account" },
     ],
   },
   {
@@ -166,8 +166,8 @@ export const CATEGORIES: Category[] = [
     desc: "Email templates and sent notifications",
     href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-notifications",
     articles: [
-      { title: "Booking Confirmation Email", href: "/portal/getting-started/booking-confirmation" },
-      { title: "Custom Email Templates", href: "/portal/getting-started/custom-templates" },
+      { title: "Booking Confirmation Notifications", href: "/portal/getting-started/booking-confirmation" },
+      { title: "Customise Notification Templates", href: "/portal/getting-started/custom-templates" },
       { title: "Notification templates", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-notifications-notification-templates" },
       { title: "Sent notifications", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-notifications-sent-notifications" },
       { title: "Customize from-email section", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-customize-section-from-e-mail" },
@@ -180,7 +180,7 @@ export const CATEGORIES: Category[] = [
     href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-supporting-texts",
     articles: [
       { title: "Terms and Conditions", href: "/portal/getting-started/terms" },
-      { title: "Custom Content Blocks", href: "/portal/getting-started/custom-blocks" },
+      { title: "Supporting Texts (footer, menu, content)", href: "/portal/getting-started/custom-blocks" },
       { title: "CSS customization", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-css" },
       { title: "Create a footer", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-create-a-footer" },
       { title: "Create footer (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-footer-on-your-frontend" },
@@ -194,13 +194,13 @@ export const CATEGORIES: Category[] = [
   },
   {
     icon: "📈", name: "Statistics",
-    desc: "Reports, CSV/Excel export, column reference",
+    desc: "Booking data, CSV/Excel export",
     href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-statistics",
     articles: [
-      { title: "Sales Report", href: "/portal/getting-started/sales-report" },
-      { title: "Export to Excel / CSV", href: "/portal/getting-started/export" },
-      { title: "Download statistics (CSV / Excel)", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-statistics" },
-      { title: "Export list of bookings", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-export-the-list-of-bookings" },
+      { title: "Statistics and sales data", href: "/portal/getting-started/sales-report" },
+      { title: "Export bookings to CSV / Excel", href: "/portal/getting-started/export" },
+      { title: "Download statistics", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-statistics" },
+      { title: "Export list of bookings (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-export-the-list-of-bookings" },
     ],
   },
   {
@@ -218,11 +218,11 @@ export const CATEGORIES: Category[] = [
   },
   {
     icon: "🔬", name: "Advanced Settings",
-    desc: "GDS connectors, multi-PCC, NDC, parallel queries",
+    desc: "GDS connectors, multi-PCC, parallel queries, MIR",
     href: "/portal/configuration/gol-ibe-advanced-settings",
     articles: [
-      { title: "GDS / NDC Connectors", href: "/portal/configuration/advanced-connectors" },
-      { title: "API Access", href: "/portal/configuration/advanced-api" },
+      { title: "GDS Connectors", href: "/portal/configuration/advanced-connectors" },
+      { title: "API and integrations", href: "/portal/configuration/advanced-api" },
       { title: "MIR connector", href: "/portal/configuration/1-gol-ibe-4-gol-ibe-advanced-settings-mir" },
       { title: "Multi-PCC queries", href: "/portal/configuration/1-gol-ibe-4-gol-ibe-advanced-settings-multipcc-dotazovani" },
       { title: "Parallel queries", href: "/portal/configuration/1-gol-ibe-4-gol-ibe-advanced-settings-paraleleni-dotazovani" },
