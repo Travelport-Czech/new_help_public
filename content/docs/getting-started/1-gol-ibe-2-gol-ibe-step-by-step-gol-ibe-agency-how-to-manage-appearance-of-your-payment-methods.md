@@ -11,7 +11,6 @@ You can control which payment methods appear on your GOL IBE front-end and in wh
 3. You will see a list of all configured payment methods.
 4. For each method you can:
    - **Enable / disable** — toggle to show or hide on the front-end
-   - **Change order** — drag and drop (or use up/down arrows) to reorder
    - **Edit** — click to change the name, description, or surcharge
 5. Click **Save**.
 
@@ -23,7 +22,6 @@ You can control which payment methods appear on your GOL IBE front-end and in wh
 | **Active** | Whether this method appears on the front-end |
 | **Surcharge** | Extra fee charged when this method is selected (absolute or %) |
 | **Description** | Short help text shown below the method name |
-| **Position** | Display order — lower number appears first |
 
 ## Tips
 

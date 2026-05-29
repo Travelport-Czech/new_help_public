@@ -8,17 +8,12 @@ You can add a surcharge to specific payment methods — for example, a credit ca
 
 1. Log into the GOL IBE admin console.
 2. Go to **Agency → Payment methods**.
-3. Find the payment method you want to add a fee to (e.g. Credit card, PayPal).
+3. Find the payment method you want to add a fee to.
 4. Click **Edit**.
 5. In the **Fee** field, enter the surcharge amount:
    - **Fixed fee** — a flat amount added to every transaction (e.g. €2.00)
    - **Percentage fee** — a percentage of the total booking value (e.g. 1.5%)
-   - **Combined** — fixed amount plus percentage
 6. Click **Save**.
-
-## Result
-
-The fee will be displayed to customers during checkout when they select that payment method. The surcharge is shown transparently before payment confirmation.
 
 ## Tips
 

@@ -11,7 +11,7 @@ An account code is a short alphanumeric string (e.g. `MYAGENCY01`) that the airl
 ## How to configure a private fare account code in GOL IBE
 
 1. Log into the GOL IBE admin console.
-2. Go to **Agency → Agency detail** (or **Basic Settings → GDS settings**).
+2. Go to **Agency → Agency detail**.
 3. Find the field **Account code** (or **Private fare account code**).
 4. Enter the code exactly as provided by the airline.
 5. Click **Save**.
@@ -28,7 +28,6 @@ After saving the account code, perform a test search on your front-end for a rou
 
 - Account codes are **case-sensitive** — enter them exactly as the airline provided
 - If private fares are not appearing, verify the code with the airline and check the PCC used in your GDS connector settings
-- Account codes work per GDS — a code for Galileo does not apply to Amadeus searches
 - Do not share your account code publicly; it is confidential to your agency agreement
 
 > 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

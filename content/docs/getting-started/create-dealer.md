@@ -9,12 +9,9 @@
    - Company name
    - Contact person name and email
    - Country and currency
-3. Set the **commission rate** (fixed amount or percentage).
-4. Click **Create**.
-
-The dealer receives an email invitation with login credentials.
+3. Click **Create**.
 
 ## After creation
 
-- Assign specific fare rules or markup overrides if needed.
 - The dealer's bookings appear separately in your **Statistics** reports.
+- You can configure the dealer's front-end appearance and settings under **Dealers → Front-end settings**.

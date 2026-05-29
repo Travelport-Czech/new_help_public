@@ -11,35 +11,18 @@ GOL IBE allows you to customise the visual appearance of your booking engine usi
 3. Enter your custom CSS rules in the editor.
 4. Click **Save**.
 
-Changes take effect immediately on the front-end (you may need to flush the HTML cache — see *Flush HTML Caches*).
+Changes take effect after flushing the HTML cache — go to **Code Lists → Flush HTML Caches**.
 
 ## What you can customise with CSS
 
 - **Colours** — background, buttons, links, headers
 - **Fonts** — font family, size, weight
 - **Layout** — spacing, padding, element positioning
-- **Logo size and placement**
-- **Button styles** — shape, colour, hover effects
-- **Form styling** — input fields, dropdowns, checkboxes
-
-## Example: Change the primary button colour
-
-```css
-.btn-primary {
-  background-color: #e85e20;
-  border-color: #e85e20;
-}
-.btn-primary:hover {
-  background-color: #c94d15;
-  border-color: #c94d15;
-}
-```
 
 ## Tips
 
 - Use browser developer tools (F12) to inspect element class names before writing CSS
-- Always test on a staging/dealer front-end before applying to production
-- After saving CSS changes, flush HTML caches to see the updates immediately
+- Always test on a dealer front-end before applying to production
 - Keep custom CSS minimal — override only what you need
 
 > ⚠️ Avoid overriding core layout CSS — this can break the booking flow.
