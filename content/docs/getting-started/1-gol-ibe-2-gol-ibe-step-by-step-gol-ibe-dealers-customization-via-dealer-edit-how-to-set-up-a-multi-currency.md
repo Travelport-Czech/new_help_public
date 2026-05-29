@@ -13,8 +13,8 @@ Multi-currency allows a dealer's front-end to display prices in a currency diffe
 5. Enable **Multi-currency**.
 6. Select the **display currency** for the dealer's front-end (e.g. CZK, EUR, USD).
 7. Set the **exchange rate source**:
-   - **Automatic** — rates are updated daily from the European Central Bank
-   - **Manual** — you enter and maintain the exchange rate yourself
+   - **Exchange rate provided by Galileo** — rates come from the Galileo GDS; you can apply a multiplier
+   - **Fixed exchange rate** — you enter and maintain the exchange rate yourself
 8. If using manual rates, enter the current exchange rate.
 9. Click **Save**.
 

@@ -2,34 +2,23 @@
 
 <!-- tags: working hours, opening hours, schedule, availability, booking engine -->
 
-Working hours define when your GOL IBE front-end accepts new bookings. Outside these hours, customers can browse but cannot complete a reservation.
+Working hours define when your GOL IBE booking engine accepts new bookings. This protects against a situation where a customer books a ticket close to the ticketing deadline when your office is already closed. The working hours are compared to the last ticketing date — the last ticketing date displayed to customers is limited to days when your agency is open.
 
 ## How to set working hours
 
 1. Log into the GOL IBE admin console.
 2. Go to **Agency → Working hours**.
-3. For each day of the week:
-   - Toggle the day **on** (open) or **off** (closed)
-   - Set the **opening time** and **closing time**
-4. Click **Save**.
+3. Click **Edit**.
+4. Set up your agency business hours for each day of the week.
+5. Click **Save**.
 
-## Operation modes
+## How it works
 
-| Mode | How to configure |
-|------|-----------------|
-| Standard hours (e.g. Mon–Fri 09:00–18:00) | Enable weekdays, set times, disable weekend |
-| 24/7 | Set all days to 00:00–23:59 |
-| Closed all day | Toggle the day off |
+- The booking engine prevents customers from making bookings that your agents wouldn't be able to e-ticket because they are out of the office.
+- For each payment method you can set how much time within working hours is needed to handle a booking. The default setting is 1 hour.
+- If none of the payment methods allows the ticket to be issued within working hours, the booking form cannot be completed and the customer is informed.
+- You can customise this notification under **Supporting texts**.
 
-## What customers see when closed
-
-When a customer tries to book outside working hours, the booking engine shows a message with your **next opening time** so they know when to return.
-
-## Tips
-
-- Hours are in your **server time zone** — check the time zone setting in **Agency → Agency detail**
-- Changes take effect immediately after saving
-- For one-off exceptions (public holidays, vacation), use the **Exceptions** tab rather than editing the regular schedule
-- If you want the payment deadline to count only during working hours, contact CEE Systems support
+For one-off exceptions (public holidays, vacation), use the **Working hours modifications** section — see [How to set up a working hours exception](./1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-how-to-set-up-working-hours-exception).
 
 > 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

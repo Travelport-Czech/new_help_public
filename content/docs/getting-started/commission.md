@@ -1,21 +1,29 @@
-# Dealer Commission
+# Commissions and Discounts
 
-<!-- tags: dealer, commission, margin, fee, payment -->
+<!-- tags: dealer, commission, margin, discount, prices -->
 
-You can set a commission that is automatically added to or subtracted from the dealer's booking prices.
+You can configure commissions and discounts that are automatically applied to bookings. These are managed under **Prices → Commissions and discounts**.
 
-## Commission types
+## What you can do
+
+- **Add a rule** — create a new commission or discount rule
+- **Edit** — modify an existing rule
+- **Copy** — duplicate a rule
+- **Delete** — remove a rule you no longer need
+
+## Rule settings
+
+Rules can be set per carrier (plating and marketing carriers), route, cabin class, flight restrictions, passenger type, and time period. Rules are applied in priority order — assign a priority number to each rule.
+
+## Commission/discount amount
 
 | Type | Description |
 |------|-------------|
-| Fixed amount | e.g. +€10 per booking |
-| Percentage | e.g. +2% on total fare |
-| None | Dealer sees the same price as your agency |
+| Fixed | A fixed amount in your agency's currency |
+| In percents | A percentage calculated from the fare amount |
 
-## How to set
+## Testing rules
 
-1. Go to **Dealers → [Dealer name] → Commission**.
-2. Select the commission type and enter the value.
-3. Click **Save**.
+You can verify how commissions will be calculated for a specific booking at [cm.golibe.com](https://cm.golibe.com/). Contact CEE Systems support to get an authorisation token.
 
-Changes apply to all new bookings immediately.
+See also: [Markup Rules and Service Fees](/portal/getting-started/markup-rules)
