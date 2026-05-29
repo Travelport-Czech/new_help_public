@@ -26,7 +26,6 @@ Your agency's contact information and billing details are used on invoices sent 
 | Field | Description |
 |-------|-------------|
 | **VAT number** | Your VAT registration number, printed on all invoices |
-| **IATA** | Your IATA agency code |
 
 4. Click **Save**.
 

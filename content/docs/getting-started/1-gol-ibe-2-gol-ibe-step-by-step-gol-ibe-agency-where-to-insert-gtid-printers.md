@@ -11,7 +11,7 @@ A GTID printer is a code assigned by Travelport that links your GDS office to a 
 ## How to add GTID printer codes
 
 1. Log into the GOL IBE admin console.
-2. Go to **Agency → Agency detail** (or **Agency → GDS settings**).
+2. Go to **Agency → Agency detail**.
 3. Find the field **GTID printer** (or **Printer code**).
 4. Enter your GTID printer code as provided by Travelport (e.g. `PRGLB2195`).
 5. Click **Save**.

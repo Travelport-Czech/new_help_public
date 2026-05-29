@@ -9,7 +9,6 @@ GOL IBE can issue e-tickets automatically once payment is confirmed. This remove
 Auto-ticketing is configured in **Agency → Agency detail**:
 
 - Set the **Auto-ticketing** field to enabled.
-- Set the **Auto-ticketing delay** — the number of minutes to wait after payment confirmation before issuing the ticket.
 
 ## GTID printer codes (Galileo/Travelport)
 
