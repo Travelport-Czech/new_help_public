@@ -10,129 +10,130 @@
 
   body {
     font-family: 'Segoe UI', system-ui, sans-serif;
-    background: #f0f2f7;
+    background: #f0f4f8;
     color: #1a202c;
   }
 
+  /* HEADER */
   header {
     background: #fff;
     border-bottom: 1px solid #e2e8f0;
-    padding: 14px 24px;
+    padding: 12px 28px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
     flex-wrap: wrap;
     box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
-
-  header h1 { font-size: 1.2rem; font-weight: 700; color: #1a202c; }
+  header h1 { font-size: 1.15rem; font-weight: 700; color: #1a202c; }
   header h1 span { color: #6366f1; }
-  #meta { font-size: 0.75rem; color: #718096; }
-
+  #meta { font-size: 0.72rem; color: #a0aec0; margin-top: 2px; }
   #refresh-btn {
     background: #6366f1; color: #fff; border: none;
-    border-radius: 8px; padding: 7px 14px;
+    border-radius: 8px; padding: 8px 16px;
     cursor: pointer; font-size: 0.82rem; font-weight: 600;
+    white-space: nowrap;
   }
   #refresh-btn:hover { background: #4f46e5; }
   #refresh-btn:disabled { background: #a0aec0; cursor: not-allowed; }
 
   /* FILTERS */
   .filters {
-    display: flex;
-    gap: 12px;
-    padding: 10px 24px;
     background: #fff;
     border-bottom: 1px solid #e2e8f0;
-    flex-wrap: wrap;
+    padding: 10px 28px;
+    display: flex;
+    gap: 16px;
     align-items: center;
+    flex-wrap: wrap;
   }
-  .filters label { font-size: 0.78rem; color: #718096; white-space: nowrap; }
+  .filter-group { display: flex; align-items: center; gap: 6px; }
+  .filter-group label { font-size: 0.75rem; color: #718096; white-space: nowrap; }
   .filters select {
     background: #f7fafc;
     border: 1px solid #cbd5e0;
     color: #2d3748;
     border-radius: 7px;
     padding: 5px 10px;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     cursor: pointer;
-    min-width: 160px;
+    min-width: 150px;
   }
   .filters select:focus { outline: none; border-color: #6366f1; }
   #filter-reset {
     background: transparent; border: 1px solid #cbd5e0;
     color: #718096; border-radius: 7px; padding: 5px 12px;
-    cursor: pointer; font-size: 0.8rem;
+    cursor: pointer; font-size: 0.78rem;
   }
   #filter-reset:hover { border-color: #6366f1; color: #6366f1; }
+  #filter-count { font-size: 0.75rem; color: #6366f1; font-weight: 600; }
+
+  /* MAIN CONTENT */
+  .content { padding: 20px 28px 40px; max-width: 1600px; margin: 0 auto; }
 
   /* KPI */
   .kpi-bar {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    padding: 14px 24px;
+    gap: 14px;
+    margin-bottom: 20px;
   }
   .kpi {
     background: #fff;
     border: 1px solid #e2e8f0;
-    border-radius: 10px;
-    padding: 12px 16px;
+    border-radius: 12px;
+    padding: 16px 20px;
     text-align: center;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   }
-  .kpi .value { font-size: 1.8rem; font-weight: 800; line-height: 1; }
-  .kpi .label { font-size: 0.7rem; color: #718096; margin-top: 3px; text-transform: uppercase; letter-spacing: 0.05em; }
-  .kpi.total .value { color: #3182ce; }
+  .kpi .value { font-size: 2rem; font-weight: 800; line-height: 1; }
+  .kpi .label { font-size: 0.68rem; color: #a0aec0; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .kpi.total  .value { color: #3182ce; }
   .kpi.active .value { color: #38a169; }
-  .kpi.impl  .value { color: #d69e2e; }
-  .kpi.deact .value { color: #e53e3e; }
+  .kpi.impl   .value { color: #d69e2e; }
+  .kpi.deact  .value { color: #e53e3e; }
 
-  /* GRID */
-  .grid {
+  /* SECTION ROWS */
+  .row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
     gap: 14px;
-    padding: 0 24px 24px;
+    margin-bottom: 14px;
   }
+  .row-4 { grid-template-columns: repeat(4, 1fr); }
+  .row-2 { grid-template-columns: 1fr 1fr; }
 
   .card {
     background: #fff;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    min-height: 0;
+    padding: 18px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
   }
   .card h2 {
-    font-size: 0.72rem;
-    font-weight: 600;
-    color: #718096;
-    margin-bottom: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #a0aec0;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    letter-spacing: 0.06em;
+    margin-bottom: 14px;
   }
-  .card canvas { flex: 1; min-height: 0; }
 
-  /* layout areas */
-  .card-status  { grid-column: 1; grid-row: 1; }
-  .card-version { grid-column: 2; grid-row: 1; }
-  .card-top10a  { grid-column: 3; grid-row: 1; }
-  .card-top10d  { grid-column: 4; grid-row: 1; }
-  .card-alla    { grid-column: 1 / 3; grid-row: 2; }
-  .card-alld    { grid-column: 3 / 5; grid-row: 2; }
+  /* chart containers with fixed heights */
+  .chart-box { position: relative; }
+  .h-260 { height: 260px; }
+  .h-320 { height: 320px; }
+  .h-auto { height: auto; }
 
+  /* loader */
   #loader {
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
-    height: 70vh; gap: 14px; color: #718096;
+    height: 60vh; gap: 14px; color: #718096;
+    font-size: 0.9rem;
   }
   .spinner {
     width: 36px; height: 36px;
@@ -142,18 +143,18 @@
     animation: spin 0.8s linear infinite;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
-
   #dashboard { display: none; }
 
-  @media (max-width: 1100px) {
-    .grid { grid-template-columns: 1fr 1fr; }
-    .card-status  { grid-column: 1; grid-row: 1; }
-    .card-version { grid-column: 2; grid-row: 1; }
-    .card-top10a  { grid-column: 1; grid-row: 2; }
-    .card-top10d  { grid-column: 2; grid-row: 2; }
-    .card-alla    { grid-column: 1 / 3; grid-row: 3; }
-    .card-alld    { grid-column: 1 / 3; grid-row: 4; }
-    .kpi-bar { grid-template-columns: repeat(2, 1fr); }
+  /* RESPONSIVE */
+  @media (max-width: 1200px) {
+    .row-4 { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 700px) {
+    .row-4, .row-2 { grid-template-columns: 1fr; }
+    .kpi-bar { grid-template-columns: 1fr 1fr; }
+    .content { padding: 14px 14px 40px; }
+    .filters { padding: 10px 14px; }
+    header { padding: 12px 14px; }
   }
 </style>
 </head>
@@ -168,20 +169,20 @@
 </header>
 
 <div class="filters">
-  <label>Stav:</label>
-  <select id="filter-status" onchange="applyFilters()">
-    <option value="">Všechny stavy</option>
-  </select>
-  <label>Země:</label>
-  <select id="filter-country" onchange="applyFilters()">
-    <option value="">Všechny země</option>
-  </select>
-  <label>Verze:</label>
-  <select id="filter-version" onchange="applyFilters()">
-    <option value="">Všechny verze</option>
-  </select>
-  <button id="filter-reset" onclick="resetFilters()">✕ Resetovat filtry</button>
-  <span id="filter-count" style="font-size:0.78rem;color:#a0aec0;margin-left:8px;"></span>
+  <div class="filter-group">
+    <label>Stav</label>
+    <select id="filter-status" onchange="applyFilters()"><option value="">Vše</option></select>
+  </div>
+  <div class="filter-group">
+    <label>Země</label>
+    <select id="filter-country" onchange="applyFilters()"><option value="">Vše</option></select>
+  </div>
+  <div class="filter-group">
+    <label>Verze</label>
+    <select id="filter-version" onchange="applyFilters()"><option value="">Vše</option></select>
+  </div>
+  <button id="filter-reset" onclick="resetFilters()">✕ Reset</button>
+  <span id="filter-count"></span>
 </div>
 
 <div id="loader">
@@ -190,38 +191,48 @@
 </div>
 
 <div id="dashboard">
-  <div class="kpi-bar">
-    <div class="kpi total"> <div class="value" id="kpi-total">–</div><div class="label">Celkem agentur</div></div>
-    <div class="kpi active"><div class="value" id="kpi-active">–</div><div class="label">Active</div></div>
-    <div class="kpi impl">  <div class="value" id="kpi-impl">–</div><div class="label">Implementation</div></div>
-    <div class="kpi deact"> <div class="value" id="kpi-deact">–</div><div class="label">Deactivated</div></div>
-  </div>
+  <div class="content">
 
-  <div class="grid">
-    <div class="card card-status">
-      <h2>Dle stavu</h2>
-      <canvas id="chartStatus"></canvas>
+    <!-- KPI -->
+    <div class="kpi-bar">
+      <div class="kpi total"> <div class="value" id="kpi-total">–</div><div class="label">Celkem agentur</div></div>
+      <div class="kpi active"><div class="value" id="kpi-active">–</div><div class="label">Active</div></div>
+      <div class="kpi impl">  <div class="value" id="kpi-impl">–</div><div class="label">Implementation</div></div>
+      <div class="kpi deact"> <div class="value" id="kpi-deact">–</div><div class="label">Deactivated</div></div>
     </div>
-    <div class="card card-version">
-      <h2>Dle verze</h2>
-      <canvas id="chartVersion"></canvas>
+
+    <!-- Řada 1: doughnuts + top10 -->
+    <div class="row row-4">
+      <div class="card">
+        <h2>Dle stavu</h2>
+        <div class="chart-box h-260"><canvas id="chartStatus"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Dle verze</h2>
+        <div class="chart-box h-260"><canvas id="chartVersion"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Top 10 zemí — Active</h2>
+        <div class="chart-box h-260"><canvas id="chartTop10Active"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Top 10 zemí — Deactivated</h2>
+        <div class="chart-box h-260"><canvas id="chartTop10Deact"></canvas></div>
+      </div>
     </div>
-    <div class="card card-top10a">
-      <h2>Top 10 zemí — Active</h2>
-      <canvas id="chartTop10Active"></canvas>
+
+    <!-- Řada 2: všechny země -->
+    <div class="row row-2">
+      <div class="card">
+        <h2>Všechny země — Active</h2>
+        <div class="chart-box" id="boxCountryActive" style="height:320px"><canvas id="chartCountryActive"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Všechny země — Deactivated</h2>
+        <div class="chart-box" id="boxCountryDeact" style="height:320px"><canvas id="chartCountryDeact"></canvas></div>
+      </div>
     </div>
-    <div class="card card-top10d">
-      <h2>Top 10 zemí — Deactivated</h2>
-      <canvas id="chartTop10Deact"></canvas>
-    </div>
-    <div class="card card-alla">
-      <h2>Všechny země — Active</h2>
-      <canvas id="chartCountryActive"></canvas>
-    </div>
-    <div class="card card-alld">
-      <h2>Všechny země — Deactivated</h2>
-      <canvas id="chartCountryDeact"></canvas>
-    </div>
+
   </div>
 </div>
 
@@ -229,32 +240,29 @@
 const CHARTS = {};
 let RAW = null;
 
-const PALETTE = {
+const PAL = {
   status:  ['#38a169','#e53e3e','#d69e2e','#3182ce','#805ad5','#d53f8c'],
   version: ['#6366f1','#38a169','#d69e2e','#e53e3e','#3182ce','#805ad5'],
   active:  '#38a169',
   deact:   '#e53e3e',
 };
 
-function hexAlpha(hex, a) {
+function alpha(hex, a) {
   const r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
   return `rgba(${r},${g},${b},${a})`;
 }
 
-function destroyChart(id) {
-  if (CHARTS[id]) { CHARTS[id].destroy(); delete CHARTS[id]; }
-}
+function kill(id) { if (CHARTS[id]) { CHARTS[id].destroy(); delete CHARTS[id]; } }
 
-function makeDoughnut(id, labels, data, colors) {
-  destroyChart(id);
-  const ctx = document.getElementById(id).getContext('2d');
-  CHARTS[id] = new Chart(ctx, {
+function doughnut(id, labels, data, colors) {
+  kill(id);
+  CHARTS[id] = new Chart(document.getElementById(id), {
     type: 'doughnut',
     data: { labels, datasets: [{ data, backgroundColor: colors, borderColor: '#fff', borderWidth: 2, hoverOffset: 6 }] },
     options: {
-      responsive: true, maintainAspectRatio: true,
+      responsive: true, maintainAspectRatio: false,
       plugins: {
-        legend: { position: 'bottom', labels: { color: '#4a5568', padding: 10, font: { size: 11 }, boxWidth: 12 } },
+        legend: { position: 'bottom', labels: { color: '#4a5568', padding: 8, font: { size: 11 }, boxWidth: 12 } },
         tooltip: { callbacks: { label: c => ` ${c.label}: ${c.parsed}` } }
       },
       cutout: '55%'
@@ -262,22 +270,13 @@ function makeDoughnut(id, labels, data, colors) {
   });
 }
 
-function makeBar(id, labels, data, color, heightPx) {
-  destroyChart(id);
-  const el = document.getElementById(id);
-  if (heightPx) el.style.height = heightPx + 'px';
-  const ctx = el.getContext('2d');
-  CHARTS[id] = new Chart(ctx, {
+function bar(id, labels, data, color) {
+  kill(id);
+  CHARTS[id] = new Chart(document.getElementById(id), {
     type: 'bar',
     data: {
       labels,
-      datasets: [{
-        data,
-        backgroundColor: data.map((_, i) => hexAlpha(color, 0.85 - i * 0.015)),
-        borderColor: color,
-        borderWidth: 1,
-        borderRadius: 4,
-      }]
+      datasets: [{ data, backgroundColor: alpha(color, 0.75), borderColor: color, borderWidth: 1, borderRadius: 4 }]
     },
     options: {
       indexAxis: 'y',
@@ -287,88 +286,27 @@ function makeBar(id, labels, data, color, heightPx) {
         tooltip: { callbacks: { label: c => ` ${c.parsed.x} agentur` } }
       },
       scales: {
-        x: { grid: { color: '#e2e8f0' }, ticks: { color: '#4a5568', font: { size: 10 } } },
-        y: { grid: { color: 'transparent' }, ticks: { color: '#4a5568', font: { size: 10 } } }
+        x: { grid: { color: '#f0f4f8' }, ticks: { color: '#718096', font: { size: 10 } } },
+        y: { grid: { display: false }, ticks: { color: '#4a5568', font: { size: 10 } } }
       }
     }
   });
 }
 
 function buildStats(rows) {
-  const countBy = (key, filter) => {
-    const map = {};
-    rows.forEach(r => {
-      if (filter && !filter(r)) return;
-      const val = r[key] || 'Unknown';
-      map[val] = (map[val] || 0) + 1;
-    });
-    return map;
+  const count = (key, fn) => {
+    const m = {};
+    rows.forEach(r => { if (fn && !fn(r)) return; const v = r[key]||'?'; m[v]=(m[v]||0)+1; });
+    return m;
   };
-  const topN = (map, n) => Object.entries(map).sort((a,b)=>b[1]-a[1]).slice(0,n)
-    .reduce((acc,[k,v])=>{acc[k]=v;return acc;},{});
-  const sorted = map => Object.fromEntries(Object.entries(map).sort((a,b)=>b[1]-a[1]));
+  const sorted = m => Object.fromEntries(Object.entries(m).sort((a,b)=>b[1]-a[1]));
+  const top10  = m => Object.fromEntries(Object.entries(m).sort((a,b)=>b[1]-a[1]).slice(0,10));
 
-  const byStatus  = countBy('status');
-  const byVersion = countBy('version');
-  const byCountryActive      = sorted(countBy('country', r => r.status === 'active'));
-  const byCountryDeactivated = sorted(countBy('country', r => r.status === 'deactivated'));
-
-  return {
-    total: rows.length,
-    byStatus,
-    byVersion,
-    byCountryActive,
-    byCountryDeactivated,
-    top10Active:      topN(byCountryActive, 10),
-    top10Deactivated: topN(byCountryDeactivated, 10),
-  };
-}
-
-function populateFilters(rawRows) {
-  const statuses  = [...new Set(rawRows.map(r => r.status))].filter(Boolean).sort();
-  const countries = [...new Set(rawRows.map(r => r.country))].filter(Boolean).sort();
-  const versions  = [...new Set(rawRows.map(r => r.version))].filter(Boolean).sort();
-
-  const fill = (id, values) => {
-    const sel = document.getElementById(id);
-    const cur = sel.value;
-    sel.innerHTML = `<option value="">Všechny</option>` +
-      values.map(v => `<option value="${v}"${v===cur?' selected':''}>${v}</option>`).join('');
-  };
-  fill('filter-status',  statuses);
-  fill('filter-country', countries);
-  fill('filter-version', versions);
-}
-
-function getFiltered() {
-  const fStatus  = document.getElementById('filter-status').value;
-  const fCountry = document.getElementById('filter-country').value;
-  const fVersion = document.getElementById('filter-version').value;
-  return RAW.filter(r =>
-    (!fStatus  || r.status  === fStatus)  &&
-    (!fCountry || r.country === fCountry) &&
-    (!fVersion || r.version === fVersion)
-  );
-}
-
-function applyFilters() {
-  const filtered = getFiltered();
-  const d = buildStats(filtered);
-  const fStatus  = document.getElementById('filter-status').value;
-  const fCountry = document.getElementById('filter-country').value;
-  const fVersion = document.getElementById('filter-version').value;
-  const active = [fStatus, fCountry, fVersion].filter(Boolean).length;
-  document.getElementById('filter-count').textContent =
-    active ? `Filtrováno: ${filtered.length} z ${RAW.length} agentur` : '';
-  renderCharts(d);
-}
-
-function resetFilters() {
-  document.getElementById('filter-status').value  = '';
-  document.getElementById('filter-country').value = '';
-  document.getElementById('filter-version').value = '';
-  document.getElementById('filter-count').textContent = '';
-  applyFilters();
+  const byStatus  = count('status');
+  const byVersion = count('version');
+  const ca = sorted(count('country', r => r.status === 'active'));
+  const cd = sorted(count('country', r => r.status === 'deactivated'));
+  return { total: rows.length, byStatus, byVersion, ca, cd, t10a: top10(ca), t10d: top10(cd) };
 }
 
 function renderCharts(d) {
@@ -377,22 +315,58 @@ function renderCharts(d) {
   document.getElementById('kpi-impl').textContent   = d.byStatus['implementation'] || 0;
   document.getElementById('kpi-deact').textContent  = d.byStatus['deactivated'] || 0;
 
-  const statusEntries  = Object.entries(d.byStatus).sort((a,b)=>b[1]-a[1]);
-  const versionEntries = Object.entries(d.byVersion).sort((a,b)=>b[1]-a[1]);
+  const se = Object.entries(d.byStatus).sort((a,b)=>b[1]-a[1]);
+  const ve = Object.entries(d.byVersion).sort((a,b)=>b[1]-a[1]);
+  doughnut('chartStatus',  se.map(x=>x[0]), se.map(x=>x[1]), PAL.status);
+  doughnut('chartVersion', ve.map(x=>x[0]), ve.map(x=>x[1]), PAL.version);
 
-  makeDoughnut('chartStatus',  statusEntries.map(x=>x[0]),  statusEntries.map(x=>x[1]),  PALETTE.status);
-  makeDoughnut('chartVersion', versionEntries.map(x=>x[0]), versionEntries.map(x=>x[1]), PALETTE.version);
+  // Top 10 — ascending so biggest is at top of horizontal bar
+  const t10a = Object.entries(d.t10a).sort((a,b)=>a[1]-b[1]);
+  const t10d = Object.entries(d.t10d).sort((a,b)=>a[1]-b[1]);
+  bar('chartTop10Active', t10a.map(x=>x[0]), t10a.map(x=>x[1]), PAL.active);
+  bar('chartTop10Deact',  t10d.map(x=>x[0]), t10d.map(x=>x[1]), PAL.deact);
 
-  // Top 10 — already sorted desc in buildStats topN
-  const t10a = Object.entries(d.top10Active).sort((a,b)=>a[1]-b[1]); // ascending for horizontal bar (bottom=biggest)
-  const t10d = Object.entries(d.top10Deactivated).sort((a,b)=>a[1]-b[1]);
-  makeBar('chartTop10Active', t10a.map(x=>x[0]), t10a.map(x=>x[1]), PALETTE.active, 260);
-  makeBar('chartTop10Deact',  t10d.map(x=>x[0]), t10d.map(x=>x[1]), PALETTE.deact,  260);
+  // All countries — dynamic height based on count
+  const ca = Object.entries(d.ca).sort((a,b)=>a[1]-b[1]);
+  const cd = Object.entries(d.cd).sort((a,b)=>a[1]-b[1]);
+  const hA = Math.max(320, ca.length * 24);
+  const hD = Math.max(320, cd.length * 24);
+  document.getElementById('boxCountryActive').style.height = hA + 'px';
+  document.getElementById('boxCountryDeact').style.height  = hD + 'px';
+  bar('chartCountryActive', ca.map(x=>x[0]), ca.map(x=>x[1]), PAL.active);
+  bar('chartCountryDeact',  cd.map(x=>x[0]), cd.map(x=>x[1]), PAL.deact);
+}
 
-  const ca = Object.entries(d.byCountryActive).sort((a,b)=>a[1]-b[1]);
-  const cd = Object.entries(d.byCountryDeactivated).sort((a,b)=>a[1]-b[1]);
-  makeBar('chartCountryActive', ca.map(x=>x[0]), ca.map(x=>x[1]), PALETTE.active, Math.max(220, ca.length * 22));
-  makeBar('chartCountryDeact',  cd.map(x=>x[0]), cd.map(x=>x[1]), PALETTE.deact,  Math.max(220, cd.length * 22));
+function populateFilters() {
+  const unique = key => [...new Set(RAW.map(r=>r[key]))].filter(Boolean).sort();
+  const fill = (id, vals) => {
+    const sel = document.getElementById(id);
+    const cur = sel.value;
+    sel.innerHTML = '<option value="">Vše</option>' +
+      vals.map(v=>`<option value="${v}"${v===cur?' selected':''}>${v}</option>`).join('');
+  };
+  fill('filter-status',  unique('status'));
+  fill('filter-country', unique('country'));
+  fill('filter-version', unique('version'));
+}
+
+function applyFilters() {
+  const fs = document.getElementById('filter-status').value;
+  const fc = document.getElementById('filter-country').value;
+  const fv = document.getElementById('filter-version').value;
+  const filtered = RAW.filter(r =>
+    (!fs || r.status === fs) && (!fc || r.country === fc) && (!fv || r.version === fv)
+  );
+  const active = [fs,fc,fv].filter(Boolean).length;
+  document.getElementById('filter-count').textContent =
+    active ? `${filtered.length} z ${RAW.length} agentur` : '';
+  renderCharts(buildStats(filtered));
+}
+
+function resetFilters() {
+  ['filter-status','filter-country','filter-version'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('filter-count').textContent = '';
+  renderCharts(buildStats(RAW));
 }
 
 function loadData() {
@@ -404,17 +378,16 @@ function loadData() {
   google.script.run
     .withSuccessHandler(resp => {
       RAW = resp.rows;
-      populateFilters(RAW);
-      const d = buildStats(RAW);
-      renderCharts(d);
-      document.getElementById('meta').textContent = `Poslední aktualizace: ${resp.lastUpdated}`;
+      populateFilters();
+      renderCharts(buildStats(RAW));
+      document.getElementById('meta').textContent = 'Poslední aktualizace: ' + resp.lastUpdated;
       document.getElementById('loader').style.display = 'none';
       document.getElementById('dashboard').style.display = 'block';
       btn.disabled = false; btn.textContent = '↻ Obnovit';
     })
     .withFailureHandler(err => {
       document.getElementById('loader').innerHTML =
-        `<div style="color:#fc8181">Chyba: ${err.message}</div>`;
+        '<div style="color:#e53e3e">Chyba: ' + err.message + '</div>';
       btn.disabled = false; btn.textContent = '↻ Zkusit znovu';
     })
     .getRows();
