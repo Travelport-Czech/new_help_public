@@ -1,7 +1,5 @@
 # Notification templates
 
-***
-
 **1) How to get to section Notification templates?**
 
 1\) Log into admin console.
@@ -112,5 +110,3 @@ further settings
 <div align="left">
 
 </div>
-
-***

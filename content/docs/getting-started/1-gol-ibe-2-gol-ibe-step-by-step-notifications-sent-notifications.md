@@ -1,7 +1,5 @@
 # Sent notifications
 
-***
-
 1\) Log into admin console.
 
 2\) Go to the section **Notifications - Sent notifications**.
@@ -23,5 +21,3 @@ Also if you would like to check out whether any notification was sent to your cl
 3\) Find that specific notification and have a look at column **Sent.** If there is a word Yes, it means that notification was generated and sent to the client from the system.
 
 This way you may have a an overview of that what is happening with your notifications.
-
-***

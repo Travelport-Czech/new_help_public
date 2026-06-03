@@ -1,7 +1,5 @@
 # How to add a service fee from airline commission?
 
-***
-
 This is a special and less used alternative to adding a service fee to the ticket price. Instead, you use the airline commission as your profit. You would do this in case you don't want to increase the ticket price for your customers anymore but you consider to display the price right from the reservation system because you know that the airline gives you a commission (eg. 9 %), which is then your profit.
 
 In this case, you can follow the steps described in the chapter [Service fees](https://cee-systems.gitbook.io/enhelp-golibe/1.-gol-ibe/4.-gol-ibe-advanced-settings/broken-reference) and set your service fee to 0. This way you don't increase the price, however you won't be able to see in the list of bookings how much you earn on that ticket. And you won't be able to lower the ticket price by a part of your commission from the airline.
@@ -37,5 +35,3 @@ If the Dealer decides that he shares 30 % of his 50 % as a discount off the pric
 * Commission: CZK 56.25
 
 You can set up the discount for customers under **Dealers**.
-
-***

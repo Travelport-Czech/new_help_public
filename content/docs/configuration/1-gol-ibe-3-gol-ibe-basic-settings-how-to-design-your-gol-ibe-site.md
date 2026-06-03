@@ -87,5 +87,3 @@ Colour customization starts in the section **Background**.
 3\) Save changes.
 
 ![](/images/docs/6977563491c6415a.png)
-
-***

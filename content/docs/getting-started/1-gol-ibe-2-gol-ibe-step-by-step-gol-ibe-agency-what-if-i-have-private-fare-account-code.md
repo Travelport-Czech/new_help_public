@@ -18,7 +18,7 @@ An account code is a short alphanumeric string (e.g. `MYAGENCY01`) that the airl
 
 ## Multiple account codes
 
-If you have account codes for different airlines, you can typically add them as a comma-separated list or via a per-carrier configuration — the exact method depends on your GOL IBE version. Contact CEE Systems support for multi-airline account code setup.
+If you have account codes for different airlines, you can typically add them as a comma-separated list or via a per-carrier configuration — the exact method depends on your GOL IBE version. use the **Support** button in the bottom-right corner.
 
 ## Checking if private fares are returned
 

@@ -1,7 +1,5 @@
 # How to implement the air ticket search form into your agency website?
 
-***
-
 You can insert a search form into your web pages and the search will thus become part of your pages. That's all you have to do. Once the client enters where he wants to fly and confirms, he will see the offers on a new page. 
 
 ![](/images/docs/b55f951a17a289d2.png)
@@ -54,5 +52,3 @@ If you want to redirect your customers straight to the search results and let th
 ```
 https://xxxx.golibe.com/results?from=VIE&to=PAR&flightClass=ECO&departureDate=2023-01-20&returnDate=2023-01-30&ADT=1
 ```
-
-***

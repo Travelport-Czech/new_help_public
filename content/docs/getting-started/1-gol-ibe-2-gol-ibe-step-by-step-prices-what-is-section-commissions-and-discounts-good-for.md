@@ -1,7 +1,5 @@
 # What is section Commissions and discounts good for ?
 
-***
-
 What is this section about?
 
 Airlines tend to give **commissions** from sold tickets to travel agencies less and less, but they still do. You can easily set up these commissions and GOL IBE then add them automatically to the bookings.
@@ -101,5 +99,3 @@ If you wish to use the set commissions also for your other systems like Travelpo
 > Feel free to watch our videohelp at: 
 > 
 > [How to create discount for certain carrier and certain flight? ](/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-prices-how-to-create-discount-for-certain-carrier-and-certain-flight)
-
-***

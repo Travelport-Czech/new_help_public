@@ -1,7 +1,5 @@
 # How to customize notifications in your GOL IBE ?
 
-***
-
 **How to change the text ?** 
 
 1\) Log into GOL IBE.
@@ -55,5 +53,3 @@ If your domain already has an SPF record, then you must add the following SPF to
 Allways add this CNAME record to your domain:
 
 **golibe.\_domainkey.agentura.cz CNAME golibe.\_domainkey.golibe.com**
-
-***

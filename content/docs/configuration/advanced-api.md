@@ -8,7 +8,7 @@ If you want to verify how your commission rules will be calculated for a specifi
 
 **[https://cm.golibe.com/](https://cm.golibe.com/)**
 
-An authorization token is required. Contact CEE Systems support to request one.
+An authorization token is required. use the **Support** button in the bottom-right corner.
 
 ## Using commission settings in third-party applications
 

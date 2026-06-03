@@ -14,4 +14,4 @@ User accounts in GOL IBE are managed in the **Users** section of the admin conso
 
 ## Removing access
 
-If a staff member leaves or should no longer have access, contact CEE Systems support to deactivate their account.
+If a staff member leaves or should no longer have access, use the **Support** button in the bottom-right corner.

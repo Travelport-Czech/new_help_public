@@ -1,7 +1,5 @@
 # How to handle MIR?
 
-***
-
 MIR (Machine Interface Record) is one of the simpliest tools provided by Travelport for generating data on bookings. These are text files with a fixed format, generated directly by the Galileo system regardless of whether the bookings were created via GOL IBE.
 
 You can find the documentation [>here<](https://support.travelport.com/webhelp/MIR/Default.htm).
@@ -41,5 +39,3 @@ If the customer doesn't enter any of the above details, it is replaced with "NON
 **785972** *- numeric variable symbol*
 
 * the symbol under which you can find the booking in GOL IBE admin console.
-
-***

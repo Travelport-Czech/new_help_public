@@ -1,7 +1,5 @@
 # How to handle special offers?
 
-***
-
 **How to handle special offers? How to publish them on your front-end?**
 
 Special offers can be created : 
@@ -155,5 +153,3 @@ If both availability and the fare exist - are you able to create the booking via
 **How does special offer look like on front-end?** 
 
 FYI, special offes that look like this way:
-
-***

@@ -1,7 +1,5 @@
 # How to set up working hours in your GOL IBE ?
 
-***
-
 **What is this section about?** 
 
 * This section allows you to set up working hours. 
@@ -49,5 +47,3 @@ Here you can define exceptions to the set working hours, ie. to define public ho
 > **If you set only a date** - it means that your agency is closed for the whole day.
 > 
 > **If you set time ( Since , Till )** - you limit your working hours on that day only to the defined period of time.
-
-***

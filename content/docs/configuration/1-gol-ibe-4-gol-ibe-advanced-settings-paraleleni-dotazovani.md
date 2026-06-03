@@ -1,7 +1,5 @@
 # How to handle Parallel requests?
 
-***
-
 The search request sometimes return better results, if one more request is sent parallely including the preferred carrier, departure time, transfer airport etc. During the search using the BB entry, GOL IBE sends a request without any preference, and parallely another request with a preference, and it then merges the results. The overview below shows which preferred carrier (or multiple carriers) should be used for which itineraries.
 
 ![](/images/docs/90ee82f7510d7104.png)
@@ -26,5 +24,3 @@ Here you may :
 * **Destination** - IATA code of the destination point.
 * **Return flight** - the preference is used only for the return flight.
 * **Carrier codes of preferred carriers** - the code of the carrier that should be preferred in case of multiple carriers separated by comma.
-
-***

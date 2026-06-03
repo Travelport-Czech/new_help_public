@@ -1,7 +1,5 @@
 # How to manage promocodes?
 
-***
-
 Promocodes feature is part of the higher version of GOL IBE. 
 
 * GOL IBE enhanced
@@ -45,5 +43,3 @@ When your clients come over to your frontend they will find field for entering p
 <div align="left">
 
 </div>
-
-***

@@ -1,7 +1,5 @@
 # How to set up service fee?
 
-***
-
 1\) Log into the GOL IBE admin console.
 
 2\) Go to the section **Prices** - **Service fees - agency** or **Service fee - dealers** (depends on your role)
@@ -85,5 +83,3 @@ How to modify  default service fee?
 3\) Once specified just save changes.
 
 ![](/images/docs/c002fbe3343ac3ce.png)
-
-***

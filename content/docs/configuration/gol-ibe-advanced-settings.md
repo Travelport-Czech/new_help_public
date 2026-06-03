@@ -12,4 +12,4 @@
 - **MIR connector** — configure the MIR integration for specific markets
 - **Service fee from airline commission** — automatically calculate fees based on carrier incentives
 
-Advanced settings should only be changed by technical staff or in consultation with CEE Systems support.
+Advanced settings should only be changed by technical staff or via the **Support** button.

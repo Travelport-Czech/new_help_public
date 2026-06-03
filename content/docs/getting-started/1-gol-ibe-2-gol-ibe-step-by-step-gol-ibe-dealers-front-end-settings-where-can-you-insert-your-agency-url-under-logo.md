@@ -20,6 +20,6 @@ The logo in the header of your booking engine becomes a clickable link that open
 ## Tips
 
 - Use `https://` — avoid plain `http://` for security and browser trust
-- If you want the link to open in a **new tab**, contact CEE Systems support — this requires a configuration change
+- If you want the link to open in a **new tab**, use the **Support** button in the bottom-right corner.
 - Make sure the destination URL is always reachable; a broken logo link looks unprofessional
 - This field is separate from the **Logo URL** field (which is the image source) — both need to be filled in
