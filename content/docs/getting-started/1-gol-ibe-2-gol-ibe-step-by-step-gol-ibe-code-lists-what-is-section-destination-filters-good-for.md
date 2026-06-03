@@ -32,5 +32,3 @@ Rules can be set as:
 6. Save changes.
 
 > ℹ️ Changes to destination filters take effect after flushing the search cache.
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

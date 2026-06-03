@@ -33,5 +33,3 @@ In addition to the agency-level billing details, each **dealer** can optionally 
 - If left empty, invoices use the **agency-level** billing details from **Agency → Agency detail**
 - Dealer-level billing details override agency details only for bookings made through that dealer's front-end
 - Changes take effect on the next invoice generated — already issued invoices are not affected
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

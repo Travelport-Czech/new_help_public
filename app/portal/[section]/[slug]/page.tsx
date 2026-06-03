@@ -85,9 +85,16 @@ export default async function PortalArticlePage({
         </div>
       </div>
 
-      {/* ── Body ── */}
-      <div className={s.articleBody}>
-        <MarkdownBody>{article.bodyWithoutH1}</MarkdownBody>
+      {/* ── Body + right video panel ── */}
+      <div className={s.articleContentRow}>
+        <div className={s.articleBody}>
+          <MarkdownBody>{article.bodyWithoutH1}</MarkdownBody>
+        </div>
+
+        <aside className={s.articleVideoPanel}>
+          <span className={s.videoPanelLabel}>Videos</span>
+          <p className={s.videoPanelEmpty}>Video tutorials for this topic will appear here.</p>
+        </aside>
       </div>
 
       {/* ── Articles grid (category overview pages) ── */}

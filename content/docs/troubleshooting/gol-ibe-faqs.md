@@ -1,7 +1,5 @@
 # 5. GOL IBE - FAQs
 
-***
-
 1. [How to implement air ticket special offers? ](/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-vlozeni-seznamu-promoakci)
 2. [How to set up working hours?](/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-pracovni-doba)
 3. [How to manage section working hours modification? ](/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-section-working-hours-modification)
@@ -37,7 +35,3 @@
 33. [How to handle service fees for 2OWs? ](/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-prices-how-to-handle-service-fees-for-2ows)
 34. [How to set up a multi-currency? ](/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-dealers-customization-via-dealer-edit-how-to-set-up-a-multi-currency)
 35. [How to manage calendar on your GOL IBE web?](/getting-started/2-gol-ibe-step-by-step-dealers-customization-via-dealer-edit-how-to-manage-calendar-on-your-gol-ibe-web-e698fa)
-
-***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

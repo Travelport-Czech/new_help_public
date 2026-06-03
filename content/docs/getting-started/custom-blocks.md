@@ -27,7 +27,3 @@ The **Supporting texts** section is where you manage custom text content that ap
 | Ticket search – Travel conditions | Terms and conditions shown at checkout |
 | CSS | Custom styling rules |
 | Ticket itinerary | Layout of e-ticket PDFs sent to customers |
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

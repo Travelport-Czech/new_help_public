@@ -31,5 +31,3 @@ By default, a service fee set to **per ticket** will be charged twice for a 2OW 
 This way the total fee for a 2OW (€5 + €5 = €10) matches the fee for a return ticket.
 
 > ⚠️ Always test your fee configuration using a real search before going live.
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

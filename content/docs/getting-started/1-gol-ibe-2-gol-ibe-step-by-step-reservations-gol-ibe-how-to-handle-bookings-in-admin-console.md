@@ -44,7 +44,3 @@ For every entry in the list you can:
 2. Click **Export in CSV** or **Export in Excel**.
 
 > **Important:** Cancel all bookings whose due date has passed and that remain unpaid. Check the list on a daily basis — uncancelled bookings may result in ADM charges or account blocks from carriers.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

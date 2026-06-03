@@ -20,7 +20,3 @@ The full notification — with PNR and the ticket itinerary attached — is deli
 4. **E-ticket is issued automatically.** Once the client pays, GOL IBE issues the e-ticket automatically (if auto-ticketing is enabled). The client then receives the ticket notification.
 
 > Skipping the forwarding step is fine — it is entirely up to you how you handle client communication after verification.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

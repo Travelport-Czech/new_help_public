@@ -14,10 +14,6 @@ Others you may need to know about are:
 * **Payments - Repeated payment** - this notification goes to the client just in case your client paid twice for one booking.
 * **GOL IBE - Forgotten password** - notification that is sent to the client upon request. In such case client gets the chance to create a new password to log into GOL IBE site.
 
-
-
 ![](/images/docs/3b92d50518714735.png)
-
-
 
 *

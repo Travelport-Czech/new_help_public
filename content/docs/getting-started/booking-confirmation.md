@@ -26,7 +26,3 @@ The customer receives a simple confirmation so they know the booking was submitt
 
 Click **DELIVERY** next to any notification to control who receives it.
 Set each recipient type (customer, dealer, agency, configurator) to **Yes** or **No**.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

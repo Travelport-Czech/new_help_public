@@ -24,5 +24,3 @@ The **header** is the top bar of your GOL IBE booking engine front-end. It typic
 ## How to change header colours
 
 Use the **Background** section in **Dealers → Front-end settings** to adjust colours by clicking on the coloured boxes. For more advanced styling, go to **Supporting texts → CSS** and add your custom CSS rules.
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

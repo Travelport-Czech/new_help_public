@@ -87,7 +87,3 @@ Colour customization starts in the section **Background**.
 3\) Save changes.
 
 ![](/images/docs/6977563491c6415a.png)
-
-***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

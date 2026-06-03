@@ -1,7 +1,5 @@
 # What is MultiPCC request about?
 
-***
-
 This feature allows you to:
 
 *  set up
@@ -16,11 +14,7 @@ In this section, you can create profiles for sending requests to PCCs other than
 
 List of created profiles
 
-
-
 ![](/images/docs/11aca1e6b27e3962.png)
-
-
 
 **How to edit MultiPCC request profile?**
 
@@ -29,18 +23,10 @@ List of created profiles
 
 This settings also includes the section **Currency and conversion**.
 
-
-
 ![](/images/docs/e9fa39b59a1bea62.png)
-
-
 
 * **Market** - selection of the market to which your HAP is connected.
 * **PCC currency in Galileo** - selection of your Galileo GDS PCC.
 * **Exchange rate provided by Galileo -** Here you can set up whether the price should be converted using the Galileo exchange rate, or a fixed exchange rate.
 * **With multiplier / Fixed exchange rate -** This item is related to the checkbox ***Exchange rate provided by Galileo***. With multiplier: the ticket price is multiplied by the entered amount. Fixed exchange rate: an exchange rate used for multiplication.
 * **Display relevant offers only if they're cheaper by -** Here you can decide to display offers at your front-end that are cheaper by the entered amount.
-
-***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

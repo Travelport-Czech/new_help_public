@@ -13,7 +13,3 @@ Click the title of each right to toggle it on or off for that user.
 ## Managing users
 
 Go to **Users** in the admin console to view, edit, or manage all staff accounts.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

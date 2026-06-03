@@ -26,5 +26,3 @@ Changes take effect after flushing the HTML cache — go to **Code Lists → Flu
 - Keep custom CSS minimal — override only what you need
 
 > ⚠️ Avoid overriding core layout CSS — this can break the booking flow.
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

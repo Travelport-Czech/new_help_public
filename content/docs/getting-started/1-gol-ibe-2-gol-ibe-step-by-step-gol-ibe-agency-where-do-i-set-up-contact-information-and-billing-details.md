@@ -34,5 +34,3 @@ Your agency's contact information and billing details are used on invoices sent 
 - Invoice details appear on all documents sent to customers — keep them accurate and up to date
 - If your VAT number changes (e.g. after re-registration), update it before the next billing cycle
 - Changes to contact details take effect immediately on new invoices and confirmation emails
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

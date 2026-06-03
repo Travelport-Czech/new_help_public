@@ -35,5 +35,3 @@ When customers are linked to bookings, your statistics become more meaningful â€
 - Enable front-end registration so customers create their own accounts
 - Encourage agents to create profiles for repeat phone/email customers as well
 - Review the **Customers** section periodically to identify your highest-value clients
-
-> ðŸ“© Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

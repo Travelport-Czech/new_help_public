@@ -33,5 +33,3 @@ Find the **Favicon** section, upload your favicon from your computer, and save.
 ## Apply changes
 
 After saving your settings, click **Flush HTML caches** (under Code Lists) to ensure changes appear immediately for visitors.
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

@@ -1,7 +1,5 @@
 # How to handle special offers?
 
-***
-
 **How to handle special offers? How to publish them on your front-end?**
 
 Special offers can be created : 
@@ -16,17 +14,9 @@ Departures and arrivals for automatically suggested special offers are preset fr
 
 **How to handle automatically suggested special offers in admin console?** 
 
-
-
-
-
 **How can you publish special offer on your ****GOL IBE**** front-end?** 
 
 This is the way how unpublished offers look like.
-
-
-
-
 
 To publish just do the following:
 
@@ -36,15 +26,7 @@ To publish just do the following:
 
 3\) In detail find section called **Validate by robot** /**Display: / Deactivate if quoted price is incorrect** -  tick all 3 boxes.
 
-
-
-
-
 In section **Restrictions** you may specify **minimum and maximum stay** 
-
-
-
-
 
 **Section Forward** is for the flight there.
 
@@ -56,10 +38,6 @@ Especially in the section **Bindings** we recommend to tick box for **Search tog
 
 If checked, availability is validated together with continuing segment via O\&D.
 
-
-
-
-
 4\) Save changes.
 
 5\) Go again to the line where this offer is and press **\[RUN CACHES]**.
@@ -67,10 +45,6 @@ If checked, availability is validated together with continuing segment via O\&D.
 6\) Take a moment. Robot will work on it and it usually takes few minutes.
 
 7\) As soon as there are 4 hooks beside your offer it means that it is published.
-
-
-
-
 
 **How to edit/add special offer manually?** 
 
@@ -89,20 +63,12 @@ Besides the regular buttons - **DELETE/EDIT/DETAIL** (detail shows all informati
 
 1\) to edit speciall offer click button **EDIT** (mandatory fields are in bold): 
 
-
-
-
-
 * **Valid since - till** - time period during which the special offer is shown to customers on your website.
 * **Departure since - till** - time period during which departure is possible.
 * **Returns since - till** - period during which return is possible.
 * Included in the set  -defines which set the special offer belongs to. For example: Europe, Asia, Special offers for up to 5000 etc. You can display special offers on your website based on these sets.
 
 2\) Prices and fees settings
-
-
-
-
 
 * **Use a manually set up fee** - if you don't check this, the service fee is calculated based on the default settings for air ticket service fees.
 * **Ticket price** -price of tickets and taxes. The total price of air ticket + taxes is compared with the quote in the GDS, and if the price in the GDS is higher by more than 10 %, such connection will be marked as not available.
@@ -113,20 +79,12 @@ Besides the regular buttons - **DELETE/EDIT/DETAIL** (detail shows all informati
 
 3\) Special offer statistics 
 
-
-
-
-
 * **Laste measurement of cache** - the last time when information about flights has been retrieved.
 * **Number of avilability requests** - the number of availability requests sent during the last update of the special offer.
 * **Current price from Galileo GDS** - the result of the verification quote. The quote is done regardless of availability. GOL IBE does a maximum of 5 attempts to get a quote, combining days at the beginning of validity of the special offer, then a week later, during weekends etc. to increase the chance of getting a successful quote.
 * **Technical note:** The availability information is refreshed based on how the special offer is used by customers. If a customer finds an unavailable combination, it is no longer offered to the next customer. GOL IBE also refreshes the availability information regularly, at least once every 24 hours during the nighttime.
 
 4\) Status 
-
-
-
-
 
 * **Validate by robot** - if checked, the data is automatically refreshed regularly.
 * **Display** - the special offer is shown to customers at your front-end.
@@ -138,10 +96,6 @@ Besides the regular buttons - **DELETE/EDIT/DETAIL** (detail shows all informati
 
 5\) Restrictions 
 
-
-
-
-
 Min/Max stay -  here you can restrict certain flights, in this order: 
 
 * **1st field** – a figure defining a number of days, or the text *SU* in case you need to apply the Sunday Rule.
@@ -152,10 +106,6 @@ You need to define each leg of the journey. Simple connections without transfer,
 
 In case of return connections, you need to do the same in the section ***Backward***. You can create the return journey by clicking either on the button ***Add backward route*** where you go through the same process as in case of the forward journey, or the button ***Create backward route automatically*** which will automatically create a mirror version of the forward journey.  
 
-
-
-
-
 6\) Forward - settings 
 
 * **Origin** - IATA code of the departure point.
@@ -164,10 +114,6 @@ In case of return connections, you need to do the same in the section ***Backwar
 * **Booking classes** - Booking class (RBD).
 * **Fare Basis Code** - Fare Basis used for pricing this leg of the flight.
 * **Fare Basis Carrier** - code of the carrier to which the Fare Basis belongs (shown in Fare Display). In some cases, another marketing carrier can operate the flight using a Fare Basis of its interline partner.
-
-
-
-
 
 7\) Forward - Bindings 
 
@@ -207,11 +153,3 @@ If both availability and the fare exist - are you able to create the booking via
 **How does special offer look like on front-end?** 
 
 FYI, special offes that look like this way:
-
-
-
-
-
-***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

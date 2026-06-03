@@ -34,5 +34,3 @@ A dealer is a sub-agent or reseller who uses your GOL IBE booking engine — eit
 - How to set up multi-currency for a dealer
 - Basic front-end customisation
 - How to change background on your front-end
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

@@ -16,5 +16,3 @@ The **payment due date** determines how long a customer has to complete payment 
 
 - Airlines impose their own ticketing deadlines (Last Ticketing Day); set your payment due date well before that
 - Unpaid bookings with a passed due date should be cancelled promptly to avoid ADM charges from carriers — check the booking list regularly and use the export feature to identify them
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

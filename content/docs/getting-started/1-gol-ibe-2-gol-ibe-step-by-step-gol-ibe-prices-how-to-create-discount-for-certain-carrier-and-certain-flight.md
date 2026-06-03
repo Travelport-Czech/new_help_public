@@ -33,5 +33,3 @@ To give a 3% discount on all Czech Airlines (OK) flights:
 - Discounts stack with service fees — verify the final price shown to customers
 - Multiple discount rules can exist; the most specific rule takes precedence
 - Use the **Preview** function to check how prices appear before activating
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

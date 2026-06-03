@@ -28,5 +28,3 @@ When a customer tries to book outside your working hours, they see a message ind
 - If you operate across time zones, set hours in your **local server time** (displayed in the admin console header)
 - Changes to working hours take effect immediately — no cache flush needed
 - For temporary closures (e.g. bank holidays), use the **Exceptions** section rather than changing the regular schedule
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

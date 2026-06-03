@@ -18,7 +18,7 @@ An account code is a short alphanumeric string (e.g. `MYAGENCY01`) that the airl
 
 ## Multiple account codes
 
-If you have account codes for different airlines, you can typically add them as a comma-separated list or via a per-carrier configuration — the exact method depends on your GOL IBE version. Contact CEE Systems support for multi-airline account code setup.
+If you have account codes for different airlines, you can typically add them as a comma-separated list or via a per-carrier configuration — the exact method depends on your GOL IBE version. use the **Support** button in the bottom-right corner.
 
 ## Checking if private fares are returned
 
@@ -29,5 +29,3 @@ After saving the account code, perform a test search on your front-end for a rou
 - Account codes are **case-sensitive** — enter them exactly as the airline provided
 - If private fares are not appearing, verify the code with the airline and check the PCC used in your GDS connector settings
 - Do not share your account code publicly; it is confidential to your agency agreement
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

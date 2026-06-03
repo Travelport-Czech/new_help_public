@@ -14,21 +14,13 @@ Departures and arrivals for automatically suggested special offers are preset fr
 
 **How to handle automatically suggested special offers in admin console?** 
 
-
-
 ![](/images/docs/aebbc9afb3a1a1eb.png)
-
-
 
 **How can you publish special offer on your GOL IBE front-end?** 
 
 This is the way how unpublished offers look like.
 
-
-
 ![](/images/docs/465bb47aa9c14ee0.png)
-
-
 
 To publish just do the following:
 
@@ -42,19 +34,11 @@ To publish just do the following:
 
 3\) In detail find section called **Validate by robot** /**Display: / Deactivate if quoted price is incorrect** -  tick all 3 boxes.
 
-
-
 ![](/images/docs/aedebcdc464d4880.png)
-
-
 
 In section **Restrictions** you may specify **minimum and maximum stay** 
 
-
-
 ![](/images/docs/f98fdce3772a8409.png)
-
-
 
 **Section Forward** is for the flight there.
 
@@ -66,11 +50,7 @@ Especially in the section **Bingings** we recommend to tick box for **Search tog
 
 If checked, availability is validated together with continuing segment via O\&D.
 
-
-
 ![](/images/docs/c74c214171fab4a2.png)
-
-
 
 4\) Save changes.
 
@@ -80,11 +60,7 @@ If checked, availability is validated together with continuing segment via O\&D.
 
 7\) As soon as there are 4 hooks beside your offer it means that it is published.
 
-
-
 ![](/images/docs/466085ac4dcbf041.png)
-
-
 
 **How to edit/add special offer manually?** 
 
@@ -103,11 +79,7 @@ Besides the regular buttons - **DELETE/EDIT/DETAIL** (detail shows all informati
 
 1\) to edit speciall offer click button **EDIT** (mandatory fields are in bold): 
 
-
-
 ![](/images/docs/4fcaeeca109950e0.png)
-
-
 
 * **Valid since - till** - time period during which the special offer is shown to customers on your website.
 * **Departure since - till** - time period during which departure is possible.
@@ -116,11 +88,7 @@ Besides the regular buttons - **DELETE/EDIT/DETAIL** (detail shows all informati
 
 2\) Prices and fees settings
 
-
-
 ![](/images/docs/c63435d1d3cf324a.png)
-
-
 
 * **Use a manually set up fee** - if you don't check this, the service fee is calculated based on the default settings for air ticket service fees.
 * **Ticket price** -price of tickets and taxes. The total price of air ticket + taxes is compared with the quote in the GDS, and if the price in the GDS is higher by more than 10 %, such connection will be marked as not available.
@@ -131,11 +99,7 @@ Besides the regular buttons - **DELETE/EDIT/DETAIL** (detail shows all informati
 
 3\) Special offer statistics 
 
-
-
 ![](/images/docs/4c1b912bb459a9bd.png)
-
-
 
 * **Laste measurement of cache** - the last time when information about flights has been retrieved.
 * **Number of avilability requests** - the number of availability requests sent during the last update of the special offer.
@@ -144,11 +108,7 @@ Besides the regular buttons - **DELETE/EDIT/DETAIL** (detail shows all informati
 
 4\) Status 
 
-
-
 ![](/images/docs/fe4a28be2fd48406.png)
-
-
 
 * **Validate by robot** - if checked, the data is automatically refreshed regularly.
 * **Display** - the special offer is shown to customers at your front-end.
@@ -160,11 +120,7 @@ Besides the regular buttons - **DELETE/EDIT/DETAIL** (detail shows all informati
 
 5\) Restrictions 
 
-
-
 ![](/images/docs/1bd9339bff44257b.png)
-
-
 
 Min/Max stay -  here you can restrict certain flights, in this order: 
 
@@ -176,11 +132,7 @@ You need to define each leg of the journey. Simple connections without transfer,
 
 In case of return connections, you need to do the same in the section ***Backward***. You can create the return journey by clicking either on the button ***Add backward route*** where you go through the same process as in case of the forward journey, or the button ***Create backward route automatically*** which will automatically create a mirror version of the forward journey.  
 
-
-
 ![](/images/docs/bda3b27b0479ca20.png)
-
-
 
 6\) Forward - settings 
 
@@ -191,11 +143,7 @@ In case of return connections, you need to do the same in the section ***Backwar
 * **Fare Basis Code** - Fare Basis used for pricing this leg of the flight.
 * **Fare Basis Carrier** - code of the carrier to which the Fare Basis belongs (shown in Fare Display). In some cases, another marketing carrier can operate the flight using a Fare Basis of its interline partner.
 
-
-
 ![](/images/docs/04485b6aa7a410bb.png)
-
-
 
 7\) Forward - Bindings 
 
@@ -235,7 +183,5 @@ If both availability and the fare exist - are you able to create the booking via
 **How does special offer look like on front-end?** 
 
 FYI, special offes that look like this way:
-
-
 
 ![](/images/docs/c975c475217f23bc.png)

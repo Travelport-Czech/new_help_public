@@ -1,7 +1,5 @@
 # How to set up working hours in your GOL IBE ?
 
-***
-
 **What is this section about?** 
 
 * This section allows you to set up working hours. 
@@ -20,11 +18,7 @@
 
 5\) Save changes.
 
-
-
 ![](/images/docs/7beb269ec6dd7cdc.png)
-
-
 
 The way example is set up means that agency will handle all bookings from 9:00am - 8pm from Monday till Friday. Every day there is half an hour for lunch. Saturday and Sunday no one handles bookings.
 
@@ -48,16 +42,8 @@ Go to **Agency - Working hours modifications**
 
 Here you can define exceptions to the set working hours, ie. to define public holidays and other days when your agency is closed. At this moment, there's no code list available for public holidays. If you need to define these days, please do so manually.
 
-
-
 ![](/images/docs/3ffcd51dc609a837.png)
-
-
 
 > **If you set only a date** - it means that your agency is closed for the whole day.
 > 
 > **If you set time ( Since , Till )** - you limit your working hours on that day only to the defined period of time.
-
-***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

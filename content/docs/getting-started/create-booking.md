@@ -21,7 +21,3 @@ Once a booking appears in the admin console, you:
 - Cancel the booking if needed (CANCEL)
 
 See also: [How to handle bookings in the Admin Console](/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-reservations-gol-ibe-how-to-handle-bookings-in-admin-console)
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

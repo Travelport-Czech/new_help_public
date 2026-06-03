@@ -37,5 +37,3 @@ Your agency logo appears in the header of the GOL IBE booking engine front-end a
 - Host the logo on a stable, publicly accessible URL — if the file moves, the logo disappears on the front-end
 - After changing the logo URL, flush HTML caches so customers see the new logo immediately
 - Test the logo on both desktop and mobile — it may be scaled differently on small screens
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

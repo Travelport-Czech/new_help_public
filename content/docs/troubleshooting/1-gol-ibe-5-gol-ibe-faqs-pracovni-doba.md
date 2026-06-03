@@ -14,11 +14,7 @@ We highly recommend using one of the integrated payment gateways and enabling au
 4. Configure your agency’s business hours.
 5. Save changes.
 
-
-
 ![](/images/docs/7beb269ec6dd7cdc.png)
-
-
 
 The example setup means that the agency will handle all bookings from 9:00 am to 8:00 pm, Monday through Friday, with a half-hour lunch break each day. Bookings are not handled on Saturdays and Sundays.
 
@@ -44,11 +40,7 @@ To define exceptions to your standard working hours, such as public holidays or 
 1. Go to **Agency - Working Hours Modifications**.
 2. Manually define public holidays and other non-working days, as there is currently no automated code list for public holidays.
 
-
-
 ![](/images/docs/3ffcd51dc609a837.png)
-
-
 
 If you set only a date, it means that your agency will be closed for the entire day. 
 

@@ -27,5 +27,3 @@ Customers visiting the dealer's booking engine will see all prices in the config
 - Exchange rate changes take effect on the next page load
 - Manual rates should be reviewed regularly to stay accurate
 - Multi-currency affects display only — settlement is in your base currency
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

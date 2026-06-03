@@ -15,5 +15,3 @@ Working hours exceptions let you override your regular schedule for specific dat
 5. Save changes.
 
 > There is no built-in code list for public holidays. If you need to define these days, please do so manually.
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

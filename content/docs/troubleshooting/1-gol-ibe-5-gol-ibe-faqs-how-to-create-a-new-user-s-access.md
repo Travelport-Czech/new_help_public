@@ -11,24 +11,12 @@
 
     This way system will recognize that the userś account you are creating is for your agency.
 
-
-
 ![](/images/docs/57129797a1474208.png)
-
-
 
 * Choose the **rights** user should have by clicking on the chosen right (the title).
 
-
-
 ![](/images/docs/5e75eede31916bcf.png)
 
-
-
-
-
 ![](/images/docs/678ab74167efdb65.png)
-
-
 
 * Save settings.

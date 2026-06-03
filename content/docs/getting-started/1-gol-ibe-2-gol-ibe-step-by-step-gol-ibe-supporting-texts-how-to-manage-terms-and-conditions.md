@@ -10,20 +10,10 @@ To update your agency Terms and conditions that appear on your front-end:
 
 4\) If you prefer plain text just insert text into the white space and save changes.
 
-
-
 ![](/images/docs/9a7df8f6532e9ca5.png)
-
-
-
-
 
 ![](/images/docs/c3ef9b595ed84c16.png)
 
-
-
 5\) If you prefer link, just insert your link into the field Alternative URL:
-
-
 
 ![](/images/docs/96120bb0b509e786.png)

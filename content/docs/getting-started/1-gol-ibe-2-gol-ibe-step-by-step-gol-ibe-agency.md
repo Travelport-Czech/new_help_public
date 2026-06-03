@@ -26,5 +26,3 @@ The **Agency** section is your central hub for managing your travel agency's pro
 - **Payment methods** — enable at least one payment option so customers can complete bookings
 - **E-mail notifications** — set up booking confirmation and ticket emails
 - **Working hours** — define when your booking engine is active
-
-> 📩 Need help? Contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

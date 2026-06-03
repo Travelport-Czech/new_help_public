@@ -28,5 +28,3 @@ The **page title** appears in the browser tab and in search engine results. Chan
 - If your booking engine is in multiple languages, set the title separately for each language in the dealer settings
 - The title affects search engine rankings — use keywords your customers actually search for
 - After flushing HTML caches, test by opening the front-end in a browser and checking the tab label
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

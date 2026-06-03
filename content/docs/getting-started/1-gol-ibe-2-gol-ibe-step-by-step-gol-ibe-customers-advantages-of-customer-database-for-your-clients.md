@@ -35,5 +35,3 @@ Customers click **Log in** on your booking engine front-end and use the email an
 - Encourage customers to register by highlighting the time-saving benefit at checkout
 - Customers can update their own profiles after logging in — you do not need to do it for them
 - If a customer forgets their password, they can reset it via the **Forgot password** link on the login page
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

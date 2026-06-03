@@ -32,5 +32,3 @@ The carrier is still available in the admin console for manual bookings if neede
 
 - After hiding a carrier, flush the search cache (**Code Lists → Flush Caches**) so the change takes effect immediately
 - You can re-enable a carrier at any time by following the same steps and checking **Active** again
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

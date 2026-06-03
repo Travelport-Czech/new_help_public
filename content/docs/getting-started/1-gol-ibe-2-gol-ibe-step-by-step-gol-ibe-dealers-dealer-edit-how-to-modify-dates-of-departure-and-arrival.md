@@ -16,5 +16,3 @@ You can control from which date customers can search for flights on the GOL IBE 
    - **2 days before** — flights offered from 2 days from today
    - **3 days before** — flights offered from 3 days from today
 6. Click **Save**.
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

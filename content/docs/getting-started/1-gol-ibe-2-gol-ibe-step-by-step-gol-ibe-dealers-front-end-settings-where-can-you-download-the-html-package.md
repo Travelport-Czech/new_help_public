@@ -35,6 +35,4 @@ The package is a ZIP archive containing the complete front-end template.
 
 - Download a fresh package after major GOL IBE updates to get the latest front-end improvements
 - Keep a copy of your customized CSS so you can reapply changes after updating the package
-- Contact CEE Systems support if the package download button is not visible in your console
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)
+- use the **Support** button in the bottom-right corner.

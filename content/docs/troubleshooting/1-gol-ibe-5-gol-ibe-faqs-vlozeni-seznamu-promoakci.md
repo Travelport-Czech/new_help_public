@@ -31,5 +31,3 @@ Na front-end svého GOL IBE můžeš přidat seznam aktuálních promoakcí a sp
 - Po uložení jdi do **Code Lists → Flush HTML Caches**, aby se změny projevily okamžitě
 - Promoakce s datem expirace odstraň nebo aktualizuj ručně — systém je automaticky neskrývá
 - Pro opakující se akce si připrav šablonu a jen aktualizuj ceny a termíny
-
-> 📩 Potřebuješ pomoct? Napiš nám na: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

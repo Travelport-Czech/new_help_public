@@ -14,5 +14,3 @@ Settings here control your agency profile, GDS connection, e-mail sender identit
 - [Payment due date](/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-where-to-set-up-payment-due-date)
 - [Auto-ticketing setup](/portal/configuration/basic-auto-ticketing)
 - [Customize from-email](/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-customize-section-from-e-mail)
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

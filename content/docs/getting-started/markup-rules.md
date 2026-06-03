@@ -25,7 +25,3 @@ See: [Commissions and discounts](/portal/getting-started/1-gol-ibe-2-gol-ibe-ste
 Promotional codes are part of higher GOL IBE editions. Configure them under **Prices → Commissions and discounts** using the discount type **Discount from total price & Promo code**.
 
 See: [How to manage promo codes](/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-manage-promocodes)
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

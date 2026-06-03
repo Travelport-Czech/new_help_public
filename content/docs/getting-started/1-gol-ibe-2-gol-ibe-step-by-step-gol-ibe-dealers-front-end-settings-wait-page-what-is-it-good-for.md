@@ -39,6 +39,4 @@ Flight availability searches can take several seconds. A well-designed wait page
 
 - Keep the message short and reassuring — customers are waiting
 - Avoid heavy images that slow down the page further
-- If searches regularly take more than 15 seconds, contact CEE Systems support to review your GDS connector performance
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)
+- If searches regularly take more than 15 seconds, use the **Support** button in the bottom-right corner.

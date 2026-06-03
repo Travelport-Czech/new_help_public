@@ -13,5 +13,3 @@ You can change the colours of your GOL IBE booking engine front-end to match you
 5. Click any coloured box and specify the colour you wish.
 6. Save changes.
 7. Go to **Code Lists → Flush HTML Caches** and check the result on your GOL IBE front-end.
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

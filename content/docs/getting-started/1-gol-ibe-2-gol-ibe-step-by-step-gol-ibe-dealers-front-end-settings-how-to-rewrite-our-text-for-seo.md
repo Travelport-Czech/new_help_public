@@ -37,5 +37,3 @@ GOL IBE provides default text for the search form and booking pages. You can rew
 - Avoid duplicate content across multiple pages
 - Flush HTML caches after every change so search engine crawlers see the updated text
 - Check results in Google Search Console after a few weeks to see if rankings improve
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

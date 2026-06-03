@@ -20,7 +20,3 @@ You can also export your full booking list directly from the **Reservations** se
 3. Click **Export in CSV** or **Export in Excel**.
 
 See: [How to export the list of bookings](/portal/getting-started/export-bookings)
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

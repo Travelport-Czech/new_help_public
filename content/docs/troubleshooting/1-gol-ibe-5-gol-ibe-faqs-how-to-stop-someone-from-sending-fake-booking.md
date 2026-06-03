@@ -7,18 +7,8 @@
 * Insert e-mail you would like to block from spamming you.
 * Save the settings.
 
-
-
 ![](/images/docs/affaa9de32ab896c.png)
 
-
-
-
-
 ![](/images/docs/6a1ca44fefeec7f3.png)
-
-
-
-
 
 ![](/images/docs/c94f692af68a1965.png)

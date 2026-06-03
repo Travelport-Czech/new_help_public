@@ -23,5 +23,3 @@ When customers open your booking engine, the **From** field on the search form w
 - If you operate multiple front-ends for different markets, each dealer can have a different default departure city
 - To remove the default, clear the field and save — customers will then see an empty **From** field
 - The default does not restrict which airports customers can search from; it is only a pre-fill
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

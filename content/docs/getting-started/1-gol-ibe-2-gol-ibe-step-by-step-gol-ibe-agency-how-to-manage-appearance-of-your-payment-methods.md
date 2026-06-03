@@ -29,5 +29,3 @@ You can control which payment methods appear on your GOL IBE front-end and in wh
 - If a payment method has a surcharge, make it visible in the description (legal requirement in some countries)
 - Disabling a payment method hides it from new bookings but does not affect existing bookings that used it
 - To add a new payment method, click **Add payment method** and fill in the form
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

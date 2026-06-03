@@ -24,6 +24,6 @@ Rules can be set per carrier (plating and marketing carriers), route, cabin clas
 
 ## Testing rules
 
-You can verify how commissions will be calculated for a specific booking at [cm.golibe.com](https://cm.golibe.com/). Contact CEE Systems support to get an authorisation token.
+You can verify how commissions will be calculated for a specific booking at [cm.golibe.com](https://cm.golibe.com/). use the **Support** button in the bottom-right corner.
 
 See also: [Markup Rules and Service Fees](/portal/getting-started/markup-rules)

@@ -25,7 +25,3 @@ Service fees are charges added on top of the ticket price. You configure them un
 A default service fee is set up automatically in each GOL IBE account. It applies to all clients without restriction. Modify it by clicking **Edit** and setting the fee type and amount.
 
 See the full setup guide: [How to set up service fee](/portal/configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-set-up-service-fee)
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)
