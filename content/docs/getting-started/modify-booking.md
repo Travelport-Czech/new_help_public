@@ -23,7 +23,3 @@ Travel dates, passenger names, flights, or seat assignments cannot be modified t
 | **DETAIL** | View full booking information including the ticket itinerary |
 | **EDIT** | Change payment status, add remarks, or cancel the booking |
 | **CANCEL** | Cancel the booking immediately — cancellation is also applied in Smartpoint |
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

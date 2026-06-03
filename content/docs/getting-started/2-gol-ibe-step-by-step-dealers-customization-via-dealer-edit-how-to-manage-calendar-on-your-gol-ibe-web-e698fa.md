@@ -28,12 +28,6 @@ A day before - you offer flights from tommorow.
 
 And so on.
 
-
-
 ![](/images/docs/4c72d607843f25e4.png)
 
-
-
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

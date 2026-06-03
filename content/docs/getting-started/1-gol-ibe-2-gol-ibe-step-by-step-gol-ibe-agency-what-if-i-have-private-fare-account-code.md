@@ -29,5 +29,3 @@ After saving the account code, perform a test search on your front-end for a rou
 - Account codes are **case-sensitive** — enter them exactly as the airline provided
 - If private fares are not appearing, verify the code with the airline and check the PCC used in your GDS connector settings
 - Do not share your account code publicly; it is confidential to your agency agreement
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

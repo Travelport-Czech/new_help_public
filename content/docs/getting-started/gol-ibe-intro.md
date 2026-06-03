@@ -2,11 +2,7 @@
 
 ***
 
-
-
 ![](/images/docs/5415bea6eac172c1.png)
-
-
 
 * **GOL IBE** is a **G**alileo **O**n **L**ine **I**nternet **B**ooking **E**ngine designed for booking of air tickets and miscellaneous travel services
 * **GOL IBE** is designed for travel agencies to integrate with their websites, enabling them to offer services online.
@@ -20,18 +16,12 @@
 * **GOL IBE** connects agencies with airlines and other sources of data. 
 * **GOL IBE** enables a purchase of any available airline content and other available services. 
 
-
-
 ![](/images/docs/6989beb590c3da3c.png)
-
-
 
 ***
 
 > You can find more details on [http://www.cee-systems.com/gol-ibe](http://www.cee-systems.com/gol-ibe)
 
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).
 
 ***

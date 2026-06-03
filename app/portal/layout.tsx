@@ -3,7 +3,7 @@
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
-import { CATEGORIES, APP_TABS, type Category } from "./data";
+import { CATEGORIES, APP_TABS, EXTERNAL_LINKS, type Category } from "./data";
 import s from "./portal-layout.module.css";
 
 /* ── Context ────────────────────────────────────────────── */
@@ -130,6 +130,22 @@ export default function PortalLayout({ children }: { children: ReactNode }) {
             </a>
           )
         )}
+      </div>
+
+      {/* External links */}
+      <div className={s.sidebarExternalLinks}>
+        <span className={s.sidebarLabel}>Links</span>
+        {EXTERNAL_LINKS.map((link) => (
+          <a
+            key={link.label}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={s.appLink}
+          >
+            {link.label}
+          </a>
+        ))}
       </div>
 
       {/* Topic navigation */}

@@ -30,5 +30,3 @@ If your office has multiple printer codes (e.g. for different ticket types), ent
 - If e-ticketing fails with an error related to the printer, double-check the GTID code
 - After adding or changing the GTID, test with a real booking before enabling full auto-ticketing
 - Automated e-ticketing must also be enabled in **Agency → Agency detail** (enable the **Auto-ticketing** option)
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

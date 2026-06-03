@@ -43,5 +43,3 @@ If the customer doesn't enter any of the above details, it is replaced with "NON
 * the symbol under which you can find the booking in GOL IBE admin console.
 
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

@@ -12,11 +12,7 @@ You may want to require different types of documents from your clients. GOL IBE 
 
 You may choose from 2 options.
 
-
-
 ![](/images/docs/192ef4e0add591da.png)
-
-
 
 **1) DOB required only by**
 
@@ -28,11 +24,7 @@ If you would to make these information mandatory just tick box **Mandatory**.
 
 **Mandatory** = client will not be able to finish booking process without entering these details into the form.
 
-
-
 ![](/images/docs/ed8e2252f6ac804c.png)
-
-
 
 **2) DOB + passport number required by** 
 
@@ -44,11 +36,7 @@ If you would to make these information mandatory just tick box **Mandatory**.
 
 **Mandatory** = client will not be able to finish booking process without entering these details into the form.
 
-
-
 ![](/images/docs/7d3cd27fe95f6d3a.png)
-
-
 
 To get to know more just feel free to see our video help: 
 

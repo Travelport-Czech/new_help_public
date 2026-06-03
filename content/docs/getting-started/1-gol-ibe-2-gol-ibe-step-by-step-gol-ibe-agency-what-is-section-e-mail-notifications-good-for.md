@@ -31,5 +31,3 @@ For each template you can:
 - **to dealer** — the agency in the role of dealer
 - **to agency** — the owner of the GOL IBE account
 - **to configurator** — the system provider (CEE Systems)
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

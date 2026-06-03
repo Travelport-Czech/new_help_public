@@ -34,5 +34,3 @@ For each entry you can:
 ## Important reminder
 
 Cancel all bookings whose due date has passed and that remain unpaid. Check the list on a daily basis — uncancelled bookings may result in ADM charges or account blocks from carriers.
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

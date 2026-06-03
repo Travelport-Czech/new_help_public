@@ -39,5 +39,3 @@ You can change the colour scheme of your GOL IBE booking engine using custom CSS
 - Test colour changes on a dealer front-end first before applying to production
 - Ensure sufficient contrast between text and background for readability (WCAG AA: 4.5:1 ratio)
 - After saving, always flush HTML caches to see the updated colours
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

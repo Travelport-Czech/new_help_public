@@ -17,10 +17,6 @@ You are welcome to :
 * **COPY** - by clicking at this option you create a copy
 * **DELETE** - by clicking at this option you delete that notification. We do not recommend to do this.
 
-
-
-
-
 **2) What types of notifications are the most used ones and what are these good for?** 
 
 * **GOL IBE - Registration** - notification goes to the person that registered in your GOL IBE account.
@@ -28,10 +24,6 @@ You are welcome to :
 Such person became registered customer of yours.
 
 * **GOL IBE**** - ****Forgotten password** - notification is sent to the person that clicks at Forgotten password text on your GOL IBE front-end. In such case client gets the chance to create a new password to log into GOL IBE site.
-
-
-
-
 
 * **Air tickets - Booking created without attachment and PNR**- anytime someone creates a booking on your GOL IBE front-end this notification goes to the client as confirmation.
 * **Air tickets - Booking created** with attachment and PNR- anytime someone creates a booking on your GOL IBE front-end this notification goes to agency and dealers.
@@ -53,10 +45,6 @@ Such person became registered customer of yours.
 
 ( If you have more then one language versions you have to choose from the list of language templates and then press once again EDIT to get to the body of the template.)
 
-
-
-
-
 **There are two ways how to modify your notifications.**
 
 Simple way and by using html coding.
@@ -65,10 +53,6 @@ Simple way and by using html coding.
 
  1\) To make simple editations just click at blue window you find on a task bar menu.
 
-
-
-
-
  Ticket itinerary will be fully at your disposal.
 
  2\) Just click into the template and start with editation. 
@@ -76,10 +60,6 @@ Simple way and by using html coding.
       Here you may **add/change/delete** the text, logo etc.
 
 3\) As soon as you are done with updates just save changes.
-
-
-
-
 
 **How to add a logo into your notification template?** 
 
@@ -97,10 +77,6 @@ Save changes.
 
 If you prefer editation via HTML just click on HTML on template task bar menu and go ahead.
 
-
-
-
-
 👍🏻**TIP FOR YOU:** If you would like to enhance the way your notifications look like, just ask your AI chat bot for some inspiration. 
 
 **4) Notification types** - will be soon updated
@@ -111,15 +87,7 @@ If you prefer editation via HTML just click on HTML on template task bar menu an
 
  
 
-
-
-
-
   To manage this fact just click at button **DELIVERY** on the ride side.
-
-
-
-
 
 Just tick/ untick wished recepient you need to and save changes.
 
@@ -146,5 +114,3 @@ further settings
 </div>
 
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

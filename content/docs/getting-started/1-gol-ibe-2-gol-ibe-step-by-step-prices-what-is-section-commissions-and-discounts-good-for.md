@@ -14,10 +14,6 @@ In the back office, go to **Prices - Commissions and discounts**.
 
 You may do there the following: 
 
-
-
-
-
 **1) ADD A RULE** - to create new rule
 
 **2) DETAIL** - this  button enables you to see the detail of already created rule
@@ -36,15 +32,7 @@ a) **Priority** - specify from 1 up higher the priority of the rule.
 
 b) **Four options** - choose from 4 listed options for your rule. 
 
-
-
-
-
 **3) AIRLINES** - specify for which carrier should this rule apply for. Choose one desired carrier from the section **Plating carrier.**
-
-
-
-
 
 **a) Marketing carrier:**
 
@@ -66,29 +54,13 @@ Please note that for each carrier there must be a rule created.
 
 ! Please note that flight numbers must be inserted in 4-digit format. So if flight number is e.g.202 you have to insert it in the following format: 0202.
 
-
-
-
-
 **5) COMMISSION/DISCOUNT AMOUNT** - specify type and the height of commission/discount.
 
 a) **Fixed** - a fixed amount of commission/discount in agency's currency.
 
-
-
-
-
 b) **In percents** - a percentage amount of commission/discount calculated from the amoun of the fare.
 
-
-
-
-
 **6) ROUTING** - you may specify from the list of options the restrictions on Origin and Destination.
-
-
-
-
 
 * **Without restrictions** - for any origin and destination.
 * **IATA code** - IATA code of the destination.
@@ -96,10 +68,6 @@ b) **In percents** - a percentage amount of commission/discount calculated from 
 * **Country - Type of destination** - a continent or other defined sets of destinations.
 
 **7) RULE IS APPLICABLE FOR** - just tick one of the options, if you wish to
-
-
-
-
 
 * **One way flights** - if ticked, the rule applies only for one-way flights.
 * **Return flights** - if ticked, the rule applies only for return flights.
@@ -130,14 +98,8 @@ You can use [this page](https://cm.golibe.com/) to verify how the commissions wi
 
 If you wish to use the set commissions also for your other systems like Travelport Smartpoint, in other words to enter your commissions also to non-GOL IBE bookings, you need to export your settings by clicking on:
 
-
-
-
-
 > Feel free to watch our videohelp at: 
 > 
 > [How to create discount for certain carrier and certain flight? ](/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-prices-how-to-create-discount-for-certain-carrier-and-certain-flight)
 
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

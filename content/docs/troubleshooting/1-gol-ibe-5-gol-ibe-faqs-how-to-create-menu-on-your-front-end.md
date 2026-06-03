@@ -1,10 +1,6 @@
 # How to create menu on your front-end?
 
-
-
 ![](/images/docs/c88738ee5f99cdc7.png)
-
-
 
 To prepare your menu:
 
@@ -24,11 +20,7 @@ To prepare your menu:
 * In case you would like to just insert plain text under that menu, insert whatever text you wish in the white part under the grey task bar menu.
 * Save changes.
 
-
-
 ![](/images/docs/c37b739f127132a0.png)
-
-
 
 This way you have prepared 1st part of your menu.
 
@@ -36,11 +28,7 @@ In case you would like to continue with adding another parts just continue the s
 
 Once all parts prepared ( see an example below) go to the section **Supporting texts - Menu settings.**
 
-
-
 ![](/images/docs/6c8200d209f561a5.png)
-
-
 
 Beeing there select your agency name in the section Dealer:
 
@@ -48,10 +36,6 @@ Choose all these menu parts you just prepared in the left box. One by one click 
 
 This way your menu will be published.
 
-
-
 ![](/images/docs/e541a65f4e63d438.png)
-
-
 
 Anytime you would like to remove you menu from your front-end, it is just about going to the section Supporting text - Menu setting and removing whatever parts you have published from the right box to the left one. As soon as you save changes the menu disappears from your front-end.

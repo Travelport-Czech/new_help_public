@@ -16,11 +16,7 @@ In this section, you can create profiles for sending requests to PCCs other than
 
 List of created profiles
 
-
-
 ![](/images/docs/11aca1e6b27e3962.png)
-
-
 
 **How to edit MultiPCC request profile?**
 
@@ -29,11 +25,7 @@ List of created profiles
 
 This settings also includes the section **Currency and conversion**.
 
-
-
 ![](/images/docs/e9fa39b59a1bea62.png)
-
-
 
 * **Market** - selection of the market to which your HAP is connected.
 * **PCC currency in Galileo** - selection of your Galileo GDS PCC.
@@ -42,5 +34,3 @@ This settings also includes the section **Currency and conversion**.
 * **Display relevant offers only if they're cheaper by -** Here you can decide to display offers at your front-end that are cheaper by the entered amount.
 
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

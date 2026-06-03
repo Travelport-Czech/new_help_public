@@ -12,11 +12,7 @@
 
 4\) Click **EDIT** to change the text.
 
-
-
 ![](/images/docs/85205409b6f9f969.png)
-
-
 
 5\) Click **EDIT** on the language version you would like to do the changes in.
 
@@ -34,21 +30,13 @@ In case there is YES = notification is sent to that recepient.
 
 In case there is NO = notification is not sent to that recepient.
 
-
-
 ![](/images/docs/031b2f069efa0f81.png)
-
-
 
 An overview about all sent notifications are stored in section **Notifications** - **Sent notifications**.
 
 In case you would like to see whatever notification sent you may click \[SEND TO ME] beside the notification you would like to see again. In such case notification will be resent to your mailbox.
 
-
-
 ![](/images/docs/d516b3b070ac0e1a.png)
-
-
 
 **How to avoid of notification non-delivery to your clients?** 
 
@@ -69,5 +57,3 @@ Allways add this CNAME record to your domain:
 **golibe.\_domainkey.agentura.cz CNAME golibe.\_domainkey.golibe.com**
 
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

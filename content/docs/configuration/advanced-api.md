@@ -15,7 +15,3 @@ An authorization token is required. Contact CEE Systems support to request one.
 If you want to use your GOL IBE commission rules in other systems (for example Travelport Smartpoint), you can export your commission settings from the **Prices → Commissions and discounts** section.
 
 ## Technical integrations
-
-For other technical integration questions or custom API requirements, contact CEE Systems support directly.
-
-> 📩 [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

@@ -11,7 +11,3 @@ You can update your own GOL IBE account details (including your password) direct
 3. You are taken directly to your account settings.
 4. Make the required changes (name, email, password, etc.).
 5. Click **Save**.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

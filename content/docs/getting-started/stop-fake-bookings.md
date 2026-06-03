@@ -18,7 +18,3 @@ The address is blocked immediately — any booking attempt from that email will 
 
 - Block individual addresses as you spot abuse patterns.
 - For broader protection, also review the **Handle bookings with clients** workflow, which ensures clients receive only a basic notification until you verify their identity — limiting what an abuser can do even if they complete the form.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

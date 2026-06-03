@@ -47,5 +47,3 @@ When your clients come over to your frontend they will find field for entering p
 </div>
 
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

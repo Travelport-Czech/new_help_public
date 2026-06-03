@@ -2,11 +2,7 @@
 
 The list of bookings provides you with a fast information about each booking.
 
-
-
 ![](/images/docs/d29984ca5dbf2d5b.png)
-
-
 
 If you click at:
 
@@ -20,11 +16,7 @@ If you click at:
 
 **Reservation details**
 
-
-
 ![](/images/docs/2aeb12ea3adbe3fd.png)
-
-
 
 *  **Id -** booking id 
 * **Reservation code -** PNR 
@@ -46,7 +38,5 @@ If you click at:
 1\) Choose time period for your statistic
 
 2\) Press button **Export in CSV** or **Export in Excel**.
-
-
 
 ![](/images/docs/b549f8a3299e8a9c.png)

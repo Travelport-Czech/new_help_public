@@ -20,5 +20,3 @@ You can add a surcharge to specific payment methods — for example, a credit ca
 - You can set different fees for different payment methods
 - Fees can be set to zero (no surcharge) for preferred payment methods
 - Changes take effect immediately — no restart needed
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

@@ -23,5 +23,3 @@ The logo in the header of your booking engine becomes a clickable link that open
 - If you want the link to open in a **new tab**, contact CEE Systems support — this requires a configuration change
 - Make sure the destination URL is always reachable; a broken logo link looks unprofessional
 - This field is separate from the **Logo URL** field (which is the image source) — both need to be filled in
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

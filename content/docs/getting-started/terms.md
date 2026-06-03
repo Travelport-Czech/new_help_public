@@ -13,7 +13,3 @@ Your terms and conditions are displayed during the booking process and must be a
 5. To link to an external page: insert the URL in the **Alternative URL** field.
 
 > Flush HTML caches after saving to publish changes immediately on the front-end.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

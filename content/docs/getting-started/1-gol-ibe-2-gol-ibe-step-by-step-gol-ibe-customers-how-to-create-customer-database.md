@@ -26,5 +26,3 @@ You can build a customer database in GOL IBE by creating profiles manually in th
 | Date of birth | Used for age-based fare rules |
 | Travel documents | Passport number, expiry, issuing country |
 | Booking history | Automatically linked when customer books |
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

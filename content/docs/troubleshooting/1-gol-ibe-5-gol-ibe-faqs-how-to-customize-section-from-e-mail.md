@@ -6,11 +6,7 @@ it means that there is some kind of security system set up on your side.
 
 If you would like to have this section customized it is neccessary to do the following:
 
-
-
 ![](/images/docs/20350284c3b4b032.png)
-
-
 
 **1) If you are using SPF**
 

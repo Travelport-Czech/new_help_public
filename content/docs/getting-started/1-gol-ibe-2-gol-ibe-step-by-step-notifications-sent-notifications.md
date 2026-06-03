@@ -14,10 +14,6 @@ To see the notification and its text, just press button **\[SEND TO ME]** beside
 
 In such case you will receive a copy of notification in your mail box.
 
-
-
-
-
 Also if you would like to check out whether any notification was sent to your clients just do the following:
 
 1\) Log into admin console.
@@ -28,10 +24,4 @@ Also if you would like to check out whether any notification was sent to your cl
 
 This way you may have a an overview of that what is happening with your notifications.
 
-
-
-
-
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

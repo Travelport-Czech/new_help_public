@@ -19,7 +19,3 @@ To issue e-tickets automatically via the Galileo GDS, your **GTID printer codes*
 If you do not use auto-ticketing, GOL IBE uses your configured **working hours** to prevent customers from creating bookings at times when you cannot process e-ticketing. This ensures every booking can be ticketed within the required deadline.
 
 > We highly recommend using an integrated payment gateway together with auto-ticketing to maximise sales — tickets can then be issued at any time, not only during working hours.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

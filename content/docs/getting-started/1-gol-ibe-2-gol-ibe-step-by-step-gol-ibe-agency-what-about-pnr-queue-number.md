@@ -23,5 +23,3 @@ Contact your Travelport helpdesk if you are unsure of your queue number.
 - If the queue number is left blank, PNRs may not be queued automatically — agents would have to find them by PNR locator in Smartpoint
 - Use a **dedicated queue** for GOL IBE bookings so they are easy to separate from bookings created directly in Smartpoint
 - After changing the queue number, test with a booking to confirm PNRs are landing in the correct queue
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

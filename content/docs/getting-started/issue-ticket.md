@@ -21,7 +21,3 @@ If you use one of the integrated payment gateways, GOL IBE can e-ticket bookings
 > We highly recommend using an integrated payment gateway with automated e-ticketing to maximise sales.
 
 See [Auto-ticketing setup](/portal/configuration/basic-auto-ticketing) for configuration details.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

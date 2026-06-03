@@ -20,14 +20,8 @@ d) **Body of footer** - insert whatever text you would like to have in your foot
 
 * admin console view
 
-
-
 ![](/images/docs/65a48544304cb483.png)
 
-
-
 * frontend 
-
-
 
 ![](/images/docs/beec4ce1d0adbe54.png)

@@ -4,11 +4,7 @@
 
 You can insert a search form into your web pages and the search will thus become part of your pages. That's all you have to do. Once the client enters where he wants to fly and confirms, he will see the offers on a new page. 
 
-
-
 ![](/images/docs/b55f951a17a289d2.png)
-
-
 
 You can implement the air ticket search form two ways. Via implementing: 
 
@@ -60,5 +56,3 @@ https://xxxx.golibe.com/results?from=VIE&to=PAR&flightClass=ECO&departureDate=20
 ```
 
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

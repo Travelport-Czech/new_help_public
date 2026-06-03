@@ -27,11 +27,7 @@ How to add new service fee?
 
 2\) Specify criterions of your service fee rule 
 
-
-
 ![](/images/docs/789a76fe69b28a1f.png)
-
-
 
 GENERAL 
 
@@ -44,11 +40,7 @@ VALIDITY
 
    
 
-
-
 ![](/images/docs/553574c0eaedc182.png)
-
-
 
 * Origin\ a) Without restrictions - no resctrictions on destination\ b) IATA code - IATA code of destination\ c) Destination type - choose from the different options system offers you.\ d) Country - to specify country of origin. 
 * Destination -  choose from the different options system offers you.
@@ -95,5 +87,3 @@ How to modify  default service fee?
 ![](/images/docs/c002fbe3343ac3ce.png)
 
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

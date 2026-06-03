@@ -29,5 +29,3 @@ In the GOL IBE admin console, go to **Customers → Customers** to view, search,
 - [How to create a customer database](./1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-customers-how-to-create-customer-database)
 - [Advantages of customer database for your clients](./1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-customers-advantages-of-customer-database-for-your-clients)
 - [Advantages of customer database for you](./1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-customers-advantages-of-customer-database-for-you)
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

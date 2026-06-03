@@ -28,7 +28,3 @@ All notification templates can be customised directly in the admin console. You 
 ## Tip
 
 To check how any sent notification looks, go to **Notifications → Sent notifications**, find the notification, and click **[SEND TO ME]** — a copy will be sent to your mailbox.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

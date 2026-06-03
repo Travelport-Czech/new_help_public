@@ -39,5 +39,3 @@ If the Dealer decides that he shares 30 % of his 50 % as a discount off the pric
 You can set up the discount for customers under **Dealers**.
 
 ***
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).

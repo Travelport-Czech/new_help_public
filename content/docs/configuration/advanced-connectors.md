@@ -10,8 +10,6 @@ Connector setup and credentials are configured by **CEE Systems support** — ag
 
 If you need a new connector configured or an existing one modified, contact:
 
-> 📩 [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)
-
 ## Advanced connectivity options
 
 Once your basic connector is set up, GOL IBE supports additional query optimisation features:
@@ -23,7 +21,3 @@ Once your basic connector is set up, GOL IBE supports additional query optimisat
 | **MIR** | Machine Interface Record — Travelport tool for generating structured booking data |
 
 See the individual articles for each feature in the Advanced Settings section.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

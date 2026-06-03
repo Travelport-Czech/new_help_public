@@ -52,8 +52,7 @@ export const CATEGORIES: Category[] = [
       { title: "Add fee for payment method", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-how-to-add-a-fee-for-payment-method" },
       { title: "Set up working hours", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-how-to-set-up-working-hours" },
       { title: "Working hours exception", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-how-to-set-up-working-hours-exception" },
-      { title: "Working hours modification (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-section-working-hours-modification" },
-      { title: "Email notifications settings", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-what-is-section-e-mail-notifications-good-for" },
+{ title: "Email notifications settings", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-what-is-section-e-mail-notifications-good-for" },
       { title: "Private fare account code", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-what-if-i-have-private-fare-account-code" },
       { title: "PNR queue number", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-what-about-pnr-queue-number" },
       { title: "GTID printers for auto e-ticketing", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-agency-where-to-insert-gtid-printers" },
@@ -79,8 +78,7 @@ export const CATEGORIES: Category[] = [
       { title: "Download HTML package", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-dealers-front-end-settings-where-can-you-download-the-html-package" },
       { title: "Agency URL under logo", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-dealers-front-end-settings-where-can-you-insert-your-agency-url-under-logo" },
       { title: "Manage header", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-dealers-front-end-settings-how-can-you-manage-header" },
-      { title: "Colour customization (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-help-for-colour-customization-of-your-gol-ibe-of-your-gol-ibe-front-end" },
-      { title: "Customize your domain", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-customize-your-domain" },
+{ title: "Customize your domain", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-customize-your-domain" },
       { title: "Basic front-end customization", href: "/portal/getting-started/2-gol-ibe-step-by-step-gol-ibe-dealers-customization-via-dealer-front-end-settings-basic-fronted-customization" },
       { title: "Change background on front-end", href: "/portal/getting-started/2-gol-ibe-step-by-step-gol-ibe-dealers-customization-via-dealer-front-end-settings-how-to-change-background-on" },
     ],
@@ -127,9 +125,7 @@ export const CATEGORIES: Category[] = [
       { title: "Manage promo codes", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-manage-promocodes" },
       { title: "Commissions and discounts", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-what-is-section-commissions-and-discounts-good-for" },
       { title: "Handle special offers", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-prices-how-to-handle-special-offers" },
-      { title: "Special offers (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-handle-special-offers" },
-      { title: "Create a service fee (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-a-service-fee" },
-      { title: "Discount for carrier / flight", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-prices-how-to-create-discount-for-certain-carrier-and-certain-flight" },
+{ title: "Discount for carrier / flight", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-prices-how-to-create-discount-for-certain-carrier-and-certain-flight" },
     ],
   },
   {
@@ -143,9 +139,7 @@ export const CATEGORIES: Category[] = [
       { title: "Destination filters – what is it for?", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-code-lists-what-is-section-destination-filters-good-for" },
       { title: "Blocked emails", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-how-about-section-blocked-e-mails" },
       { title: "Flush caches", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-what-is-section-flush-cashes-good-for" },
-      { title: "Flush caches (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-what-is-section-flush-cashes-good-for" },
-      { title: "Flush HTML caches", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-what-is-section-flush-html-cashes-good-for" },
-      { title: "Flush HTML caches (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-what-is-section-flush-hmtl-cashes-good-for" },
+{ title: "Flush HTML caches", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-code-lists-what-is-section-flush-html-cashes-good-for" },
     ],
   },
   {
@@ -158,7 +152,6 @@ export const CATEGORIES: Category[] = [
       { title: "Manage your own account", href: "/portal/getting-started/reset-password" },
       { title: "Manage user accounts", href: "/portal/getting-started/deactivate-user" },
       { title: "Create new user access", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-a-new-user-s-access" },
-      { title: "Manage own user account (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-own-gol-ibe-user-s-account" },
     ],
   },
   {
@@ -183,13 +176,9 @@ export const CATEGORIES: Category[] = [
       { title: "Supporting Texts (footer, menu, content)", href: "/portal/getting-started/custom-blocks" },
       { title: "CSS customization", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-css" },
       { title: "Create a footer", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-create-a-footer" },
-      { title: "Create footer (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-footer-on-your-frontend" },
-      { title: "Create menu on front-end", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-create-menu-on-your-front-end" },
-      { title: "Create menu (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-create-menu-on-your-front-end" },
-      { title: "Edit ticket itinerary template", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-edit-your-ticket-itinerary-template" },
-      { title: "Edit ticket template (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-edit-your-ticket-itinerary-template" },
-      { title: "Manage terms and conditions", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-manage-terms-and-conditions" },
-      { title: "Terms and conditions (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-manage-terms-and-conditions" },
+{ title: "Create menu on front-end", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-create-menu-on-your-front-end" },
+{ title: "Edit ticket itinerary template", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-edit-your-ticket-itinerary-template" },
+{ title: "Manage terms and conditions", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-gol-ibe-supporting-texts-how-to-manage-terms-and-conditions" },
     ],
   },
   {
@@ -200,7 +189,14 @@ export const CATEGORIES: Category[] = [
       { title: "Statistics and sales data", href: "/portal/getting-started/sales-report" },
       { title: "Export bookings to CSV / Excel", href: "/portal/getting-started/export" },
       { title: "Download statistics", href: "/portal/getting-started/1-gol-ibe-2-gol-ibe-step-by-step-statistics" },
-      { title: "Export list of bookings (FAQ)", href: "/portal/troubleshooting/1-gol-ibe-5-gol-ibe-faqs-how-to-export-the-list-of-bookings" },
+    ],
+  },
+  {
+    icon: "💡", name: "Tips & Tricks",
+    desc: "Video tutorials, colour tools, useful links and resources",
+    href: "/portal/getting-started/tips-and-tricks",
+    articles: [
+      { title: "Tips & Tricks overview", href: "/portal/getting-started/tips-and-tricks" },
     ],
   },
   {
@@ -237,6 +233,16 @@ export const APP_TABS: AppTab[] = [
   { label: "TCP", href: "https://www.travelcloudpro.com/#/login?returnTo=%2Fcbt%2Fcorporates", isActive: false },
   { label: "My Travelport", href: "https://auth.travelport.com/", isActive: false },
   { label: "My GOL IBE Web", href: "https://demo4.golibe.com/", isActive: false },
+];
+
+export type ExternalLink = {
+  label: string;
+  href: string;
+};
+
+export const EXTERNAL_LINKS: ExternalLink[] = [
+  { label: "GOL IBE pricelist", href: "https://www.cee-systems.com/solutions/gol-ibe" },
+  { label: "CEE product web", href: "https://www.cee-systems.com/" },
 ];
 
 export const WALKTHROUGHS: Walkthrough[] = [

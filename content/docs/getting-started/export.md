@@ -19,7 +19,3 @@ The file downloads immediately and contains all bookings created within the sele
 - Use the data for accounting, reconciliation, and management reporting.
 
 > We recommend checking and exporting the booking list on a daily basis.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

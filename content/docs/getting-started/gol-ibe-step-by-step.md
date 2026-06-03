@@ -15,6 +15,4 @@
 
 ***
 
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com).
-
 ***

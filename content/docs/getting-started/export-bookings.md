@@ -17,7 +17,3 @@ The file downloads immediately and contains all bookings created within the sele
 
 - **Cancel overdue unpaid bookings daily.** If a booking passes its due date and remains unpaid, the carrier may charge you an ADM (Agency Debit Memo) or block your account entirely.
 - **Review the list systematically.** A daily check of your open bookings helps you catch unpaid reservations before they cause problems.
-
----
-
-📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)

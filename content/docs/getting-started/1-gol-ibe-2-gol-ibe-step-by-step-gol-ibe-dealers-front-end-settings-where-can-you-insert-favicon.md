@@ -34,5 +34,3 @@ A **favicon** is the small icon shown in the browser tab next to your page title
 - If you set the favicon in the HTML package directly (in `index.html`), that takes precedence over the admin console setting
 - Clear your browser cache after changing the favicon — browsers cache favicons aggressively
 - Test in multiple browsers (Chrome, Firefox, Edge) as favicon rendering differs slightly
-
-> 📩 Feel free to contact us at: [gol_support@cee-systems.com](mailto:gol_support@cee-systems.com)
