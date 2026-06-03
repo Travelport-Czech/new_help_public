@@ -300,6 +300,11 @@
   background: #fff;
 }
 
+.articleFooter > * {
+  flex: 1;
+  max-width: 240px;
+}
+
 .articleFooterBtnOutline {
   display: inline-flex;
   align-items: center;
@@ -315,7 +320,7 @@
   text-decoration: none;
   transition: background 140ms;
   font-family: inherit;
-  min-width: 200px;
+  width: 100%;
 }
 
 .articleFooterBtnOutline:hover { background: #fff0e8; color: #e85e20; text-decoration: none; }
@@ -335,7 +340,7 @@
   text-decoration: none;
   transition: background 140ms;
   font-family: inherit;
-  min-width: 200px;
+  width: 100%;
 }
 
 .articleFooterBtnPrimary:hover { background: #db4a17; }
