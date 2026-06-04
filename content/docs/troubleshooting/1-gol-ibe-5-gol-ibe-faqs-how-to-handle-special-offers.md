@@ -4,9 +4,9 @@ How to handle special offers? How to publish them on your front-end?
 
 Special offers can be created : 
 
-**1)** **Manually** - by adding a special offer and defining all required parameters of the connection.
+1. **Manually** — by adding a special offer and defining all required parameters of the connection.
 
-**2) Automatically** - by letting the robot to generate the list of the cheapest flights to the agency´s admin console - section **Prices - Special offers extended**.
+2. **Automatically** — by letting the robot to generate the list of the cheapest flights to the agency´s admin console - section **Prices - Special offers extended**.
 
 This selections is done by robot on base of behaviour of agency´s clientele on their GOL IBE front-end.
 
@@ -18,7 +18,6 @@ Departures and arrivals for automatically suggested special offers are preset fr
 
 **How can you publish special offer on your GOL IBE front-end?** 
 
-This is the way how unpublished offers look like.
 
 ![](/images/docs/465bb47aa9c14ee0.png)
 
@@ -92,7 +91,7 @@ Besides the regular buttons - **DELETE/EDIT/DETAIL** (detail shows all informati
 
 * **Use a manually set up fee** - if you don't check this, the service fee is calculated based on the default settings for air ticket service fees.
 * **Ticket price** -price of tickets and taxes. The total price of air ticket + taxes is compared with the quote in the GDS, and if the price in the GDS is higher by more than 10 %, such connection will be marked as not available.
-* **Service fee** - this is the amount of the service fee, if you checked the option ***Use a manually set up fee*****.** The special offer can use its own fee that can be the same or different from the fee used for regular search.
+* **Service fee** - this is the amount of the service fee, if you checked the option ***Use a manually set up fee***. The special offer can use its own fee that can be the same or different from the fee used for regular search.
 * **Service fee for infant in % from common service fee** -  fee for infants. It is defined as a percentual discount from the price for adult passengers.
 * **Rounded** - range of rounding.
 * **Displayed final price** - the total price, ie. the combination of ***Ticket price*** and ***Service fee***. This price is shown to end customers on your website.
@@ -160,28 +159,25 @@ How do special offers work?
 
 **What should you check if speciall offer does not work properly?** 
 
-**1) Does the whole connection exist in neutral availability?** 
+1. **Does the whole connection exist in neutral availability?**
 
 For example, you may want to create a special offer A20MAYPRGPTY.MAD/IB. If such a connection doesn't exist in neutral availability, the reason may be that such a long transfer flight is not possible in neutral availability. In the back office, this is then usually shown by red crosses at the end of the row with the special offer.
 
-**2) Doesn´t a multi-segment journey include a 1-day shift?** 
+2. **Doesn´t a multi-segment journey include a 1-day shift?**
 
 If the journey consists of multiple segments, the departure date on the second or third segment may be shifted by one day. If that's the case, you have to acknowledge that by checking *Add +1 day* on the *Bindings* tab.
 
-**3) Are selected booking classes available for the special offer?** 
+3. **Are selected booking classes available for the special offer?**
 
 For some of the lowest prices, the requested booking classes may no longer be available. Please check in neutral availability which classes are open.
 
-**4) Does a fare exist for the selected carrier?**
+4. **Does a fare exist for the selected carrier?**
 
 If you have a look at the Fare Display by using the FD entry in the reservation system, can you see the selected Fare Basis with the correct carrier code? If the Fare Basis belongs to a carrier other than the marketing carrier, you need to acknowledge that in the field *Fare Basis Carrier*.
 
-**5) Can you simulate the booking using the fare quote via your terminal window?**
+5. **Can you simulate the booking using the fare quote via your terminal window?**
 
 If both availability and the fare exist - are you able to create the booking via your terminal window and get a fare quote for it?
 
 **How does special offer look like on front-end?** 
 
-FYI, special offes that look like this way:
-
-![](/images/docs/c975c475217f23bc.png)

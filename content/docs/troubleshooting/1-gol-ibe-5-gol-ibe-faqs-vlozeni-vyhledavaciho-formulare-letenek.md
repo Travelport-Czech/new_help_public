@@ -22,9 +22,6 @@ Below you find find step by step instructions.
 
 FYI: The form includes HTML, CSS, pictures and relevant scripts for implementation into your website, including the full functionality of the destination search tooltip. You can customize the form as you wish.
 
-The result may look like e.g. this way: 
-
-![](/images/docs/1d67029a6b6dc861.png)
 
 **2.iframe**
 

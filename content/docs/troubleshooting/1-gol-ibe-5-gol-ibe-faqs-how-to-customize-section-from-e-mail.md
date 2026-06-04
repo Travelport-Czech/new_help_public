@@ -8,7 +8,7 @@ If you would like to have this section customized it is neccessary to do the fol
 
 ![](/images/docs/20350284c3b4b032.png)
 
-**1) If you are using SPF**
+1. **If you are using SPF**
 
 You have to allow our mailserver in the setting of your domain :
 
@@ -16,7 +16,7 @@ You have to allow our mailserver in the setting of your domain :
 
  
 
-**2) If your domain has got SPF record**
+2. **If your domain has got SPF record**
 
 You have to add SPF into that record the following way:
 

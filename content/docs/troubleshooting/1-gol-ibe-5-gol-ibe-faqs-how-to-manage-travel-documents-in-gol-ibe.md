@@ -14,7 +14,7 @@ You may choose from 2 options.
 
 ![](/images/docs/192ef4e0add591da.png)
 
-**1) DOB required only by**
+1. **DOB required only by**
 
 In this section you specify for which entered country you will require DOB (Date Of Birth).
 
@@ -26,7 +26,7 @@ If you would to make these information mandatory just tick box **Mandatory**.
 
 ![](/images/docs/ed8e2252f6ac804c.png)
 
-**2) DOB + passport number required by** 
+2. **DOB + passport number required by**
 
 In this section you specify for which entered country you will require DOB (Date Of Birth) and also passport details.
 

@@ -75,14 +75,14 @@ b) **In percents** - a percentage amount of commission/discount calculated from 
 
 9. **FARES, BOOKING CLASSES, AND PASSENGER TYPE** — here you may specify restrictions on fares, booking classes and type of passengers
 
-**10) TIME PERIODS -** in this section you choose the time period which is the rule valid for. Also you specify the dates of departures and returns the rule applies for.
+10. **TIME PERIODS** — in this section you choose the time period which is the rule valid for. Also you specify the dates of departures and returns the rule applies for.
 
 * **Sales (ticketing) since - till -** to set up the period during which the commission is active.
 * **Departures (Returns) since - till - to** set up the allowed date range for the journey.
 
 11. **SAVE** — press when done with the rule creation
 
-**Rules *****Use as commission***** and *****Use as discount***** can be used together, or separately. You may want to set a discount on tickets in the amount of your earned commission, and then it is convenient for your to set this up with a single rule.**
+**Rules *Use as commission* and *Use as discount* can be used together, or separately. You may want to set a discount on tickets in the amount of your earned commission, and then it is convenient for your to set this up with a single rule.**
 
 ## How can you test out the rules?
 

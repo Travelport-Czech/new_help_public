@@ -20,7 +20,7 @@ The big advantage of this solution is that you can fully integrate the form with
 
 ![](/images/docs/777457d78eaffa08.png)
 
-2\) Go to the section **Dealer details** - **Front-End settings****  -** link **Static HTML**** for download**.
+2\) Go to the section **Dealer details** - **Front-End settings** - link **Static HTML** for download.
 
 ![](/images/docs/dcedb7a1607ac3a2.png)
 
@@ -30,9 +30,6 @@ The big advantage of this solution is that you can fully integrate the form with
 
 > The form includes HTML, CSS, pictures and relevant scripts for implementation into your website, including the full functionality of the destination search tooltip. You can customize the form as you wish.
 
-The result may look like e.g. this way: 
-
-![](/images/docs/1d67029a6b6dc861.png)
 
 **2. iframe**
 

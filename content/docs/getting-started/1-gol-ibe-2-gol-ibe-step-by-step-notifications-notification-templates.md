@@ -1,6 +1,6 @@
 # Notification templates
 
-**1) How to get to section Notification templates?**
+1. **How to get to section Notification templates?**
 
 1\) Log into admin console.
 
@@ -15,7 +15,7 @@ You are welcome to :
 * **COPY** - by clicking at this option you create a copy
 * **DELETE** - by clicking at this option you delete that notification. We do not recommend to do this.
 
-**2) What types of notifications are the most used ones and what are these good for?** 
+2. **What types of notifications are the most used ones and what are these good for?**
 
 * **GOL IBE - Registration** - notification goes to the person that registered in your GOL IBE account.
 
@@ -31,7 +31,7 @@ Such person became registered customer of yours.
 * **Payments - Repeated payment** - in case customer pays accidentaly twice
 * All notifications their subject starts with "Travelfusion" expression relate to Travelfusion content. 
 
-**3) How to edit the way notification looks like?** 
+3. **How to edit the way notification looks like?**
 
 1\) Log into administration console.
 
@@ -77,9 +77,9 @@ If you prefer editation via HTML just click on HTML on template task bar menu an
 
 👍🏻**TIP FOR YOU:** If you would like to enhance the way your notifications look like, just ask your AI chat bot for some inspiration. 
 
-**4) Notification types** - will be soon updated
+4. **Notification types** — will be soon updated
 
-**5) Notification recipients** 
+5. **Notification recipients**
 
   You may manage the delivery of every single notification you have set up in the system.
 

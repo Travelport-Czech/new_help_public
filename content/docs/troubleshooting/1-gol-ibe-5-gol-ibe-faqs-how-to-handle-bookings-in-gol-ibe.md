@@ -6,9 +6,9 @@ The list of bookings provides you with a fast information about each booking.
 
 If you click at:
 
-**1) DETAIL** > you get to the detail of booking. You will be able to see even more information then showed in the list. Every single booking detail includes also ticket itinerary.
+1. **DETAIL** — you get to the detail of booking. You will be able to see even more information then showed in the list. Every single booking detail includes also ticket itinerary.
 
-**2) EDIT** > you will be able e.g. to change payment status, add own remarks, cancel the booking
+2. **EDIT** — you will be able e.g. to change payment status, add own remarks, cancel the booking
 
 3\) **CANCEL** > if you click at this button, that booking will be canceled immediately . 
 

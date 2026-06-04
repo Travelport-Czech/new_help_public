@@ -32,7 +32,7 @@ GOL IBE
 
 ![](/images/docs/b77992cf6ab6114c.png)
 
-**4.3. How to redirect your ****GOL IBE**** site visitors to your agency site?** 
+**4.3. How to redirect your GOL IBE site visitors to your agency site?**
 
 Just insert your agency site in section **URL Homepage**.
 
@@ -60,7 +60,7 @@ Anyone clicks on your logo there will be redirected to your agency homepage.
 
 ![](/images/docs/574d7a1f8aba4c9e.png)
 
-**4.4. How to change colours on your ****GOL IBE**** frontend?**
+**4.4. How to change colours on your GOL IBE frontend?**
 
 Colour customization starts in the section **Background**.
 
@@ -72,7 +72,7 @@ Colour customization starts in the section **Background**.
 
 ![](/images/docs/6f5158f5ffd91b9c.png)
 
-**4.5. How to add a favicon into your ****GOL IBE**** site link?** 
+**4.5. How to add a favicon into your GOL IBE site link?**
 
 1\) Find section **Favicon.**
 
