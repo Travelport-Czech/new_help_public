@@ -404,10 +404,13 @@
 .articleVideoPanel {
   width: 260px;
   flex-shrink: 0;
-  padding: 28px 24px 28px 0;
+  padding: 28px 0 28px 0;
   border-left: 1px solid #c0d9eb;
   min-height: 200px;
   background: #f7f8fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .videoPanelLabel {
@@ -416,8 +419,9 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #4a5568;
-  padding: 0 0 10px 16px;
+  padding: 0 0 10px 0;
   display: block;
+  width: calc(100% - 32px);
   border-bottom: 1px solid #c0d9eb;
   margin-bottom: 16px;
 }
@@ -432,7 +436,7 @@
 .videoPlaceholderWrap {
   display: flex;
   justify-content: center;
-  padding: 20px 16px 0;
+  width: calc(100% - 32px);
 }
 
 .videoPlaceholderTile {
@@ -443,16 +447,17 @@
   gap: 10px;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: #e8edf5;
-  border: 2px dashed #b0bdd4;
-  border-radius: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(26,54,104,0.10);
   cursor: default;
   user-select: none;
 }
 
 .videoPlaceholderIcon {
-  font-size: 28px;
-  color: #8fa3c0;
+  font-size: 26px;
+  color: #131f6b;
   line-height: 1;
 }
 
@@ -460,7 +465,7 @@
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: #8fa3c0;
+  color: #131f6b;
   text-transform: uppercase;
 }
 
