@@ -506,13 +506,15 @@
 .btnPrimary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   gap: 7px;
+  height: 48px;
   background: #e85e20;
   color: #fff;
   border: 1.5px solid transparent;
   border-radius: 5px;
-  padding: 13px 26px;
+  padding: 0 26px;
   font-size: 15px;
   line-height: 1;
   font-weight: 600;
@@ -529,13 +531,15 @@
 .btnOutline {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   gap: 7px;
+  height: 48px;
   background: #fff;
   color: #e85e20;
   border: 1.5px solid #e85e20;
   border-radius: 5px;
-  padding: 13px 26px;
+  padding: 0 26px;
   font-size: 15px;
   line-height: 1;
   font-weight: 600;
