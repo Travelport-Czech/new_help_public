@@ -309,12 +309,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   background: #fff;
   color: #e85e20;
   border: 2px solid #e85e20;
   border-radius: 6px;
-  padding: 14px 32px;
+  height: 52px;
+  padding: 0 32px;
   font-size: 15px;
+  line-height: 1;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -329,18 +332,23 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
   background: #e85e20;
   color: #fff;
   border: 2px solid transparent;
   border-radius: 6px;
-  padding: 14px 32px;
+  height: 52px;
+  padding: 0 32px;
   font-size: 15px;
+  line-height: 1;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
   transition: background 140ms;
   font-family: inherit;
   width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .articleFooterBtnPrimary:hover { background: #db4a17; }
