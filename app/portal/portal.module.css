@@ -506,6 +506,7 @@
 .btnPrimary {
   display: inline-flex;
   align-items: center;
+  box-sizing: border-box;
   gap: 7px;
   background: #e85e20;
   color: #fff;
@@ -513,11 +514,14 @@
   border-radius: 5px;
   padding: 13px 26px;
   font-size: 15px;
+  line-height: 1;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
   transition: background 140ms;
   font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .btnPrimary:hover { background: #db4a17; color: #fff; text-decoration: none; }
@@ -525,6 +529,7 @@
 .btnOutline {
   display: inline-flex;
   align-items: center;
+  box-sizing: border-box;
   gap: 7px;
   background: #fff;
   color: #e85e20;
@@ -532,6 +537,7 @@
   border-radius: 5px;
   padding: 13px 26px;
   font-size: 15px;
+  line-height: 1;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
