@@ -402,10 +402,10 @@
 
 /* Right video panel */
 .articleVideoPanel {
-  width: 260px;
+  width: 300px;
   flex-shrink: 0;
-  padding: 28px 16px;
-  border-left: none;
+  padding: 32px 24px;
+  border-left: 1px solid #c0d9eb;
   background: transparent;
   display: flex;
   align-items: flex-start;
