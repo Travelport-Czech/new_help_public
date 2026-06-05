@@ -51,9 +51,6 @@ export default async function PortalArticlePage({
     (cat) => cat.href === articleHref || cat.articles.some((a) => a.href === articleHref)
   );
   const isCategoryPage = parentCat?.href === articleHref;
-  const relatedArticles = parentCat
-    ? parentCat.articles.filter((a) => a.href !== articleHref).slice(0, 6)
-    : [];
 
   return (
     <div className={s.articleWrap}>
@@ -100,25 +97,11 @@ export default async function PortalArticlePage({
         </aside>
       </div>
 
-      {/* ── Articles grid (category overview pages) ── */}
-      {isCategoryPage && parentCat && (
+      {/* ── All articles in section ── */}
+      {parentCat && (
         <div className={s.relatedSection}>
           <div className={s.articleGrid}>
             {parentCat.articles.map((a) => (
-              <Link key={a.href} href={a.href} className={s.articleCard}>
-                <span>{a.title}</span>
-                <span className={s.articleArrow}>→</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* ── Related articles (regular article pages) ── */}
-      {!isCategoryPage && relatedArticles.length > 0 && (
-        <div className={s.relatedSection}>
-          <div className={s.articleGrid}>
-            {relatedArticles.map((a) => (
               <Link key={a.href} href={a.href} className={s.articleCard}>
                 <span>{a.title}</span>
                 <span className={s.articleArrow}>→</span>
