@@ -1,4 +1,4 @@
-# What types of notifications are the most used ones and what are these good for?
+# Most used notifications
 
 1. **What types of notifications are the most used?**
 

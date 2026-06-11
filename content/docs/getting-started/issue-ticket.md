@@ -2,6 +2,8 @@
 
 <!-- tags: ticket, ticketing, e-ticket, auto-ticketing, working hours -->
 
+> **Note:** Automated e-ticketing is only available in the highest version of GOL IBE.
+
 GOL IBE issues tickets **automatically** — there is no manual "Issue ticket" button in the admin console.
 
 ## How ticketing works
@@ -18,6 +20,6 @@ GOL IBE uses your configured working hours to prevent customers from creating bo
 
 If you use one of the integrated payment gateways, GOL IBE can e-ticket bookings automatically as soon as payment is received — even outside your working hours.
 
-> We highly recommend using an integrated payment gateway with automated e-ticketing to maximise sales.
+> Automated e-ticketing is available as part of the highest GOL IBE plan. It requires an integrated payment gateway. When both are in place, tickets can be issued automatically after a successful card payment.
 
 See [Auto-ticketing setup](/portal/configuration/basic-auto-ticketing) for configuration details.

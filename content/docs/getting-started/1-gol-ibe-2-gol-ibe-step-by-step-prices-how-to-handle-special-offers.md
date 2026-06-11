@@ -69,7 +69,7 @@ Besides the regular buttons - **DELETE/EDIT/DETAIL** (detail shows all informati
 
 3. Special offer statistics 
 
-* **Laste measurement of cache** - the last time when information about flights has been retrieved.
+* **Last measurement of cache** - the last time when information about flights has been retrieved.
 * **Number of avilability requests** - the number of availability requests sent during the last update of the special offer.
 * **Current price from Galileo GDS** - the result of the verification quote. The quote is done regardless of availability. GOL IBE does a maximum of 5 attempts to get a quote, combining days at the beginning of validity of the special offer, then a week later, during weekends etc. to increase the chance of getting a successful quote.
 * **Technical note:** The availability information is refreshed based on how the special offer is used by customers. If a customer finds an unavailable combination, it is no longer offered to the next customer. GOL IBE also refreshes the availability information regularly, at least once every 24 hours during the nighttime.
@@ -139,6 +139,4 @@ If you have a look at the Fare Display by using the FD entry in the reservation 
 5. **Can you simulate the booking using the fare quote via your terminal window?**
 
 If both availability and the fare exist - are you able to create the booking via your terminal window and get a fare quote for it?
-
-**How does special offer look like on front-end?** 
 

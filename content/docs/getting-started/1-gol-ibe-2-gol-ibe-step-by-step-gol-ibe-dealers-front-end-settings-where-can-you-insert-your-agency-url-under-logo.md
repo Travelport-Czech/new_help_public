@@ -15,7 +15,7 @@ You can set a clickable link on your agency logo so that when customers click th
 
 ## Result
 
-The logo in the header of your booking engine becomes a clickable link that opens your agency homepage. This is standard on all professional booking engines and helps customers navigate between your main site and the booking engine.
+The logo in the header of your booking engine becomes a clickable link that opens your agency homepage.
 
 ## Tips
 

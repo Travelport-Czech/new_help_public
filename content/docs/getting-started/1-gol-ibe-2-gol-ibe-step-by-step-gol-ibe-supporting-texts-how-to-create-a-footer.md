@@ -12,10 +12,3 @@ b) **Text type** - find Footer.
 c) **Language** - choose that one your frontend is in.
 
 d) **Body of footer** - insert whatever text you would like to have in your footer.
-
- 
-
-* admin console view
-
-* frontend 
-

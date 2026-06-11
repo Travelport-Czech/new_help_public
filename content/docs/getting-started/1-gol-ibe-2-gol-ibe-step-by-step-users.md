@@ -12,3 +12,5 @@ The **Users** section lets you manage all staff accounts that have access to the
 - **Manage your own account** — update your profile and password
 
 Keeping user accounts up to date ensures that only authorised staff can access your GOL IBE admin console.
+
+> **Security note:** For security reasons, passwords should be changed at least every 3 months.

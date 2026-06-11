@@ -1,4 +1,4 @@
-# GOL IBE – How to handle bookings in admin console
+# Handle bookings
 
 <!-- tags: reservations, bookings, admin console, detail, edit, cancel, export, PNR -->
 

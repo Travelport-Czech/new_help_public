@@ -8,7 +8,7 @@
 
 You can modify: 
 
-4.1. FE title
+1. FE title
 
 Whatever text you insert will show as your frontend title.
 

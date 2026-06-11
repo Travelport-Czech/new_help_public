@@ -21,7 +21,7 @@ If you click at:
 *  **Dealer´s agency** - Agency
 *  **Customer (Username) -** if booking created by registered customer
 *  **Resevation status -** status may be **Active - Canceled - Issued**
-*  **Payment status -** status may be Paid and Unpaid\~\~.\~\~ Payment status changes only in case booking is paid via credit card.
+*  **Payment status -** status may be Paid and Unpaid. Payment status changes only in case booking is paid via credit card.
 *  **Due Date -** Last ticketing date settled by you (if carrier does require payment earlier then you)
 * **Total price -** total price
 *  **Service fee -** service fee 

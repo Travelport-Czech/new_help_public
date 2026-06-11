@@ -30,8 +30,3 @@ If you would to make these information mandatory just tick box **Mandatory**.
 
 **Mandatory** = client will not be able to finish booking process without entering these details into the form.
 
-To get to know more just feel free to see our video help: 
-
-[How to handle travel documents? ](https://www.youtube.com/watch?v=EmHu6wZz4E8)
-
-[How to find mandatory travel documents on front-end? ](https://www.youtube.com/watch?v=FZWuWeU4-H4\&list=PL75I-fdosv-hmpuOtLnNKnM1hg9JaU0qa\&index=12)

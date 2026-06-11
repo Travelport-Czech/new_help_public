@@ -82,7 +82,7 @@ b) **In percents** - a percentage amount of commission/discount calculated from 
 
 11. **SAVE** — press when done with the rule creation
 
-**Rules *Use as commission* and *Use as discount* can be used together, or separately. You may want to set a discount on tickets in the amount of your earned commission, and then it is convenient for your to set this up with a single rule.**
+> Rules **Use as commission** and **Use as discount** can be used together, or separately. You may want to set a discount on tickets in the amount of your earned commission — in that case it is convenient to set this up with a single rule.
 
 ## How can you test out the rules?
 
