@@ -1,28 +1,23 @@
-# What is MultiPCC request about?
+# MultiPCC request
 
-This feature allows you to:
+This feature allows you to set up, search, and receive offers from multiple markets simultaneously.
 
-*  set up
-*  search 
-* get 
+The offers are displayed together in a single list and a single currency. Prices reflect fares and availability from multiple countries (e.g., Germany, Austria, Ukraine). The MultiPCC feature fully supports currency conversions and a wide range of settings — including when and where to search in which countries, and statistics of successful searches.
 
-offers from multiple markets. 
+In this section you create profiles for sending requests to PCCs other than the default one set up in the Agency profile.
 
-The offers are clearly displayed together in one list and one currency. The prices reflect fares and availabilities from eg. Germany, Austria, Ukraine and any other countries. The MultiPCC functionality fully supports currency conversions and a wide range of settings, such as when and where to search in which countries, including statistics of successful searches.
+## How to edit a MultiPCC request profile
 
-In this section, you can create profiles for sending requests to PCCs other than the default one set up in Agency profile.
+Click the **Edit** button next to the profile.
 
-List of created profiles
+The basic settings for GDS communication are the same as in the Agency profile.
 
-**How to edit MultiPCC request profile?**
+## Currency and conversion settings
 
-* to edit the profile just click on the **Edit** button.
-* The basic settings for communication with the GDS remains the same as in Agency profile
-
-This settings also includes the section **Currency and conversion**.
-
-* **Market** - selection of the market to which your HAP is connected.
-* **PCC currency in Galileo** - selection of your Galileo GDS PCC.
-* **Exchange rate provided by Galileo -** Here you can set up whether the price should be converted using the Galileo exchange rate, or a fixed exchange rate.
-* **With multiplier / Fixed exchange rate -** This item is related to the checkbox ***Exchange rate provided by Galileo***. With multiplier: the ticket price is multiplied by the entered amount. Fixed exchange rate: an exchange rate used for multiplication.
-* **Display relevant offers only if they're cheaper by -** Here you can decide to display offers at your front-end that are cheaper by the entered amount.
+- **Market** — the market your HAP is connected to.
+- **PCC currency in Galileo** — your Galileo GDS PCC currency.
+- **Exchange rate provided by Galileo** — choose whether the price should be converted using the Galileo exchange rate or a fixed exchange rate.
+- **With multiplier / Fixed exchange rate** — related to the *Exchange rate provided by Galileo* checkbox:
+  - **With multiplier** — the ticket price is multiplied by the entered amount.
+  - **Fixed exchange rate** — a fixed rate is used for multiplication.
+- **Display relevant offers only if they're cheaper by** — enter an amount; only offers cheaper by at least this amount will be shown at your front-end.

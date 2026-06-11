@@ -1,22 +1,23 @@
-# How to edit your ticket itinerary template?
+# How to edit your ticket itinerary template
 
 To edit your ticket itinerary template:
 
 1. Log into the administration console.
-2. To edit the template, click button **EDIT.**
+2. Go to **Supporting texts → Ticket itinerary template**.
+3. Click **EDIT**.
 
-## 3a) Editation simple
+There are two ways to edit the template:
 
-To make simple editations, click the blue window on the task bar menu.
+## Simple editation
 
-The ticket itinerary will be fully at your disposal.
+Click the blue window on the task bar menu — the template opens for editing.
 
-Click into the body of the template and start editing. (You may add, change, or delete text or a logo.)
+Click into the body of the template and start editing. You may add, change, or delete text or a logo.
 
-Once done, click on the blue window on the task bar menu again and save changes.
+Once done, click the blue window again on the task bar menu and save changes.
 
-## 3b) Editation via html
+## Editation via HTML
 
-If you prefer editing via HTML, click on **HTML** on the template task bar menu and go ahead.
+If you prefer editing via HTML, click **HTML** on the template task bar menu and go ahead.
 
-If done, click **Update** and **Save Changes**.
+When done, click **Update** and **Save Changes**.

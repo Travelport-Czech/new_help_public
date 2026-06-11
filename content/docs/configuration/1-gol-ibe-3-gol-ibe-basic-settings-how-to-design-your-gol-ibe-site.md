@@ -6,23 +6,21 @@ To access all design options:
 2. Go to **Dealers → Dealers settings → Front-end settings**.
 3. Make your changes and save.
 
----
-
-## 1. FE title
+## FE title
 
 Whatever text you insert will be shown as your frontend title.
 
-## 2. SEO (Search Engine Optimization)
+## SEO (Search Engine Optimization)
 
 This space is fully at your disposal — insert any keywords or text you wish.
 
-## 3. Redirect visitors to your agency site
+## Redirect visitors to your agency site
 
 Insert your agency site URL in the **URL Homepage** field.
 
 This link is hidden under your logo on the GOL IBE main page. Clicking the logo redirects the visitor to your agency homepage.
 
-## 4. Insert a logo
+## Insert a logo
 
 1. Find section **Banner**.
 2. Tick **Type**.
@@ -30,7 +28,7 @@ This link is hidden under your logo on the GOL IBE main page. Clicking the logo 
 4. Specify the height of the logo in pixels.
 5. Save changes.
 
-## 4a. Change colors on your frontend
+## Change colors on your frontend
 
 Color customization is in the **Background** section.
 
@@ -38,7 +36,7 @@ Color customization is in the **Background** section.
 2. Save changes.
 3. Check the result on your GOL IBE frontend.
 
-## 5. Add a favicon
+## Add a favicon
 
 1. Find section **Favicon**.
 2. Upload the favicon from your computer.

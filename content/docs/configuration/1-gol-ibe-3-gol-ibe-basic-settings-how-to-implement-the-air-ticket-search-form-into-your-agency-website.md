@@ -1,34 +1,31 @@
-# How to implement the air ticket search form into your agency website?
+# How to implement the air ticket search form into your agency website
 
-You can insert a search form into your web pages and the search will thus become part of your pages. Once the client enters where they want to fly and confirms, they will see the offers on a new page.
+You can insert a search form into your web pages so the search becomes part of your site. Once the client enters their destination and confirms, they will see the offers on a new page.
 
-You can implement the air ticket search form two ways:
+There are two implementation options:
 
-1. [HTML package](#1-html-package)
-2. [iframe](#2-iframe)
+## HTML package
 
-Below you will find step-by-step instructions.
-
-**1. HTML package**
-
-The big advantage of this solution is that you can fully integrate the form with the page and customize it. The implementation can be more demanding — the form contains styles and scripts that can interact with your page, and any conflicts must be resolved for everything to work properly.
+The big advantage of this option is full integration — you can customize the form completely. Implementation can be more demanding as the form contains styles and scripts that may interact with your existing page; any conflicts need to be resolved.
 
 1. Log into the GOL IBE admin console.
-2. Go to the section **Dealer details** → **Front-End settings** → link **Static HTML** for download.
+2. Go to **Dealer details → Front-End settings → Static HTML** (download link).
 
-> The form includes HTML, CSS, pictures and relevant scripts for implementation into your website, including the full functionality of the destination search tooltip. You can customize the form as you wish.
+> The package includes HTML, CSS, images, and scripts for implementation into your website, including the full functionality of the destination search tooltip.
 
-**2. iframe**
+## iframe
 
-Another option is the iframe, which offers easy implementation but has some disadvantages. For example, if your customers search for an open-jaw flight and they keep adding more flights, the form will keep extending — you either need to leave enough space on your website or allow scrolling.
+The iframe option offers easy implementation. One limitation: if customers search for open-jaw flights and keep adding segments, the form will keep extending — either leave enough space or allow scrolling.
 
-Enter the following code into your existing webpage (replace `xxxx` with the subdomain of your Front-End):
+Insert the following code into your webpage (replace `xxxx` with the subdomain of your front-end):
 
-*`<iframe src=https://xxx.golibe.com/iframe width="100%" height="565px" frameborder="0" allowtransparency=true></iframe>`*
+```html
+<iframe src="https://xxxx.golibe.com/iframe" width="100%" height="565px" frameborder="0" allowtransparency="true"></iframe>
+```
 
-**For geeks: Customize the default settings of the search**
+## Redirect customers directly to search results
 
-If you want to redirect your customers straight to the search results, you can use parameters in the URL:
+If you want to send customers straight to results, use URL parameters:
 
 ```
 https://xxxx.golibe.com/results?from=VIE&to=PAR&flightClass=ECO&departureDate=2023-01-20&returnDate=2023-01-30&ADT=1

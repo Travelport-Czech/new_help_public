@@ -1,37 +1,50 @@
-# How to add a service fee from airline commission?
+# Service fee from airline commission
 
-This is a special and less used alternative to adding a service fee to the ticket price. Instead, you use the airline commission as your profit. You would do this in case you don't want to increase the ticket price for your customers anymore but you consider to display the price right from the reservation system because you know that the airline gives you a commission (eg. 9 %), which is then your profit.
+This is a special alternative to adding a standard service fee. Instead of increasing the ticket price, you use the airline commission as your profit — useful when you want to display the raw GDS price to customers while knowing the airline pays you a commission (e.g., 9%).
 
-In this case, you can follow the steps described in the chapter Service fees and set your service fee to 0. This way you don't increase the price, however you won't be able to see in the list of bookings how much you earn on that ticket. And you won't be able to lower the ticket price by a part of your commission from the airline.
+In this case, set your service fee to 0 following the steps in the [Service fees](/portal/configuration/1-gol-ibe-3-gol-ibe-basic-settings-how-to-set-up-service-fee) article. This way the price is not increased — however, your earnings per ticket will not be visible in the bookings list, and you won't be able to lower the ticket price by sharing part of your commission.
 
-You can share your commission with your Dealers and to waive a part of your commission to lower the ticket price for end customers. 
+## Sharing commission with dealers and customers
 
-Example of calculation:
+You can share your commission with Dealers and pass part of it on as a discount to end customers.
 
-Fare: CZK 1 250\
-Taxes: 3 900 CZK\
-The total price displayed to customers: CZK 5 150\
-Your commission: 9 %
+## Example calculation
 
-It means that you will see in the list of bookings:
+> **Base data:**
+> - Fare: CZK 1,250
+> - Taxes: CZK 3,900
+> - **Total price displayed to customers: CZK 5,150**
+> - Your commission: 9%
 
-* Price of the Fare decreased by 9 % (112.5): CZK 1 137.5
-* Service fee (9 %): CZK 112.5
+**In the bookings list you will see:**
 
-You can set up the commission calculation under **Price -> Service fees - agency**.
+| Item | Amount |
+|------|--------|
+| Fare reduced by 9% (−112.50) | CZK 1,137.50 |
+| Service fee (9%) | CZK 112.50 |
 
-If you decide to share with your Dealer and you give them 50 % of your provision, you will see in the list of bookings:
+Configure this under **Prices → Service fees - agency**.
 
-* Price of the Fare decreased by 9 % (112.5): CZK 1 137.5
-* Service fee (9 %): CZK 112.5
-* Commission: CZK 56.25 (to be paid to the Dealer)
+---
 
-You can set up the discount for Dealers under **Price -> Service fees - dealer**.
+**If you share 50% of your commission with your Dealer:**
 
-If the Dealer decides that he shares 30 % of his 50 % as a discount off the price displayed to customers, you will see in the list of bookings:
+| Item | Amount |
+|------|--------|
+| Fare reduced by 9% (−112.50) | CZK 1,137.50 |
+| Service fee (9%) | CZK 112.50 |
+| Commission paid to Dealer | CZK 56.25 |
 
-* Price of the Fare decreased by (((9 % (112.5)) + (30 % of 50 % (56.25)) = 16.875) = 129.375): CZK 1 120.625
-* Service fee (9 %): CZK 112.5
-* Commission: CZK 56.25
+Configure this under **Prices → Service fees - dealer**.
 
-You can set up the discount for customers under **Dealers**.
+---
+
+**If the Dealer further shares 30% of their 50% as a customer discount:**
+
+| Item | Amount |
+|------|--------|
+| Fare reduced by 16.875 (9% + 30%×50%) | CZK 1,120.625 |
+| Service fee (9%) | CZK 112.50 |
+| Commission paid to Dealer | CZK 56.25 |
+
+Configure the customer discount under **Dealers**.
