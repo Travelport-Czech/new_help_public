@@ -121,7 +121,8 @@
 
 /* External links section */
 .sidebarExternalLinks {
-  padding: 10px 12px 8px;
+  padding: 8px 12px 6px;
+  border-top: 1px solid #c0d9eb;
   border-bottom: 1px solid #c0d9eb;
   flex-shrink: 0;
 }
@@ -129,7 +130,7 @@
 /* Topic navigation */
 .sidebarTopics {
   flex: 1;
-  padding: 8px 0;
+  padding: 4px 0;
   overflow-y: auto;
   min-height: 0;
 }
@@ -140,7 +141,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #4a5568;
-  padding: 10px 20px 5px;
+  padding: 6px 20px 4px;
   display: block;
 }
 
@@ -149,7 +150,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 11px 16px 11px 20px;
+  padding: 8px 16px 8px 20px;
   font-size: 16px;
   font-weight: 600;
   color: #131f6b;
