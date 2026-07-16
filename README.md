@@ -1,3 +1,6 @@
+> **Moved:** This repository is superseded by [Travelport-Czech/gol_help_public](https://github.com/Travelport-Czech/gol_help_public).
+> Live site: https://travelport-czech.github.io/gol_help_public/
+> Please use the new repo; this one should be archived.
 # gol_help_en
 
 Documentation portal for GOL help, hosted on Vercel and managed on GitHub.
